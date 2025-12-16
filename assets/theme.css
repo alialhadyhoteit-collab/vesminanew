@@ -10116,3 +10116,20 @@ split-lines {
     /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
     padding: 4px 8px !important; /* <--- SMALLER BADGE BOX SIZE (was 6px 10px) */
 }
+/* ================================
+   IMPACT – CHANGE CART ICON COLOR
+   ================================ */
+
+/* Cart icon */
+.header a[href*="/cart"],
+.header .header__icon--cart,
+.header .header__icon--cart svg {
+  color: #ffffff !important; /* <-- CHANGE COLOR HERE */
+}
+
+/* Force SVG paths */
+.header a[href*="/cart"] svg *,
+.header .header__icon--cart svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
