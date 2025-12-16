@@ -10147,3 +10147,8 @@ split-lines {
   fill: currentColor !important;
   stroke: currentColor !important;
 }
+.product-form__size-chart::before,
+.size-chart::before {
+  content: "📏";
+  margin-right: 6px;
+}
