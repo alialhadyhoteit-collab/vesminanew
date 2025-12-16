@@ -15,8 +15,8 @@
         "image_7Ay348": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_08_59_32_PM.png",
-            "mobile_image": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_08_59_32_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_09_03_22_PM.png",
+            "mobile_image": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_09_03_22_PM.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -37,6 +37,8 @@
         "image_6DmrRH": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_09_05_05_PM.png",
+            "mobile_image": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_09_05_05_PM.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -93,9 +95,50 @@
         "background": "#f2f2f2",
         "background_gradient": ""
       }
+    },
+    "rich_text_fiqzag": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_4HdFPL": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_FwYdQ3": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_k4dQkP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_4HdFPL",
+        "heading_FwYdQ3",
+        "richtext_k4dQkP"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
-    "slideshow_NGcxtr"
+    "slideshow_NGcxtr",
+    "rich_text_fiqzag"
   ]
 }
