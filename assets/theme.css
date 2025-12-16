@@ -10031,4 +10031,53 @@ split-lines {
   fill: currentColor !important;
   stroke: currentColor !important;
 }
+/* =========================================
+   IMPACT – MOBILE COLORS (PRICE / VARIANTS)
+   ========================================= */
+@media (max-width: 749px) {
+
+  /* --- PRICE COLOR (RED) --- */
+  .price,
+  .product .price,
+  .product__info .price,
+  .product-info .price {
+    color: #c62828 !important; /* RED price */
+  }
+
+  /* Compare-at / old price (gray) */
+  .price .price__compare,
+  .price .price__compare-at {
+    color: #9e9e9e !important;
+  }
+
+  /* --- VARIANT LABELS (Size / Color text) --- */
+  .product-form__input legend,
+  .variant-picker__label,
+  .product-option__label {
+    color: #000000 !important; /* BLACK */
+  }
+
+  /* --- VARIANT OPTIONS (buttons / pills) --- */
+  .variant-picker button,
+  .product-form__input label {
+    color: #424242 !important;          /* DARK GRAY text */
+    border-color: #bdbdbd !important;   /* LIGHT GRAY border */
+    background-color: #ffffff !important;
+  }
+
+  /* Selected option */
+  .variant-picker button.is-selected,
+  .product-form__input input:checked + label {
+    color: #000000 !important;           /* BLACK text */
+    border-color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+
+  /* Disabled / unavailable option */
+  .variant-picker button.is-disabled,
+  .product-form__input input:disabled + label {
+    color: #9e9e9e !important;
+    border-color: #e0e0e0 !important;
+  }
+}
 
