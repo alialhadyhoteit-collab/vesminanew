@@ -10006,27 +10006,10 @@ split-lines {
 /* IMPACT: change ONLY the cart icon color */
 .header .header__icon--cart,
 .header .header__icon--cart svg {
-  color: #fff !important; /* <- change to your color */
+  color: #ffffff !important; /* <- change to your color */
 }
 
 /* If the cart uses SVG sprite/use/path, force it too */
-.header .header__icon--cart svg * {
-  fill: currentColor !important;
-  stroke: currentColor !important;
-}
-/* ================================
-   IMPACT – CHANGE CART ICON COLOR
-   ================================ */
-
-/* Cart icon */
-.header a[href*="/cart"],
-.header .header__icon--cart,
-.header .header__icon--cart svg {
-  color: #000000 !important; /* <-- CHANGE COLOR HERE */
-}
-
-/* Force SVG paths */
-.header a[href*="/cart"] svg *,
 .header .header__icon--cart svg * {
   fill: currentColor !important;
   stroke: currentColor !important;
