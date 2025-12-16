@@ -10014,4 +10014,21 @@ split-lines {
   fill: currentColor !important;
   stroke: currentColor !important;
 }
+/* ================================
+   IMPACT – CHANGE CART ICON COLOR
+   ================================ */
+
+/* Cart icon */
+.header a[href*="/cart"],
+.header .header__icon--cart,
+.header .header__icon--cart svg {
+  color: #000000 !important; /* <-- CHANGE COLOR HERE */
+}
+
+/* Force SVG paths */
+.header a[href*="/cart"] svg *,
+.header .header__icon--cart svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
 
