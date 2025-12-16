@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "slideshow_LHwrMi": {
+    "slideshow_NGcxtr": {
       "type": "slideshow",
       "blocks": {
-        "image_p3hjji": {
+        "image_7Ay348": {
           "type": "image",
           "settings": {
             "content_max_width": 780,
@@ -32,7 +32,7 @@
             "background_gradient": ""
           }
         },
-        "image_dWYUwJ": {
+        "image_6DmrRH": {
           "type": "image",
           "settings": {
             "content_max_width": 780,
@@ -54,8 +54,8 @@
         }
       },
       "block_order": [
-        "image_p3hjji",
-        "image_dWYUwJ"
+        "image_7Ay348",
+        "image_6DmrRH"
       ],
       "name": "Slideshow",
       "settings": {
@@ -98,7 +98,7 @@
     }
   },
   "order": [
-    "slideshow_LHwrMi",
+    "slideshow_NGcxtr",
     "featured_collection_kEMRtM"
   ]
 }
