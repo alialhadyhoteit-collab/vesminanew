@@ -10133,3 +10133,42 @@ split-lines {
   fill: currentColor !important;
   stroke: currentColor !important;
 }
+/* =====================================
+   IMPACT – ICON COLOR PER PAGE
+   Change ONLY the colors below
+   ===================================== */
+
+/* ========== HOME PAGE ========== */
+.template-index .header .header__icon,
+.template-index .header .header__icon svg {
+  color: #ffffff !important; /* HOME icon color */
+}
+
+.template-index .header .header__icon svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+
+/* ========== COLLECTION PAGE ========== */
+.template-collection .header .header__icon,
+.template-collection .header .header__icon svg {
+  color: #000000 !important; /* COLLECTION icon color */
+}
+
+.template-collection .header .header__icon svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+
+/* ========== PRODUCT PAGE ========== */
+.template-product .header .header__icon,
+.template-product .header .header__icon svg {
+  color: #c62828 !important; /* PRODUCT icon color */
+}
+
+.template-product .header .header__icon svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
