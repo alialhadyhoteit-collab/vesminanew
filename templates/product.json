@@ -1,1 +1,67 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title_fjYh7d":{"type":"title","settings":{"heading_tag":"h2"}},"price_VDj6mT":{"type":"price","settings":{"show_taxes_notice":false}}},"block_order":["title_fjYh7d","price_VDj6mT"],"custom_css":[],"settings":{"full_width":true,"show_fixed_add_to_cart":true,"desktop_media_width":55,"desktop_media_layout":"carousel_thumbnails_bottom","mobile_media_size":"contained","mobile_carousel_control":"thumbnails","enable_video_autoplay":false,"enable_video_looping":true,"enable_image_zoom":false,"max_image_zoom_level":3,"background":"","background_gradient":"","text_color":"","input_background":"rgba(0,0,0,0)","input_text_color":""}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "buy_buttons_RwkAPF": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "title_fjYh7d": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "price_VDj6mT": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        }
+      },
+      "block_order": [
+        "buy_buttons_RwkAPF",
+        "title_fjYh7d",
+        "price_VDj6mT"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

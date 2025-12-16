@@ -75,7 +75,7 @@
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_04_51_32_PM_91e00979-dc25-4ade-a44c-65a0d79f8122.png",
         "reduce_padding": true,
-        "background_opacity": 0,
+        "background_opacity": 100,
         "background_blur_radius": 20
       }
     }
