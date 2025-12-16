@@ -15,19 +15,21 @@
         "image_7Ay348": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_08_59_32_PM.png",
+            "mobile_image": "shopify://shop_images/ChatGPT_Image_Dec_16_2025_08_59_32_PM.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Wyprzedaż kolekcji zimowej",
-            "title": "",
-            "heading_tag": "h0",
+            "subheading": "Prosty styl, który pasuje do Ciebie",
+            "title": "Vesmina",
+            "heading_tag": "h3",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 13,
+            "overlay_opacity": 50,
             "background": "",
             "background_gradient": ""
           }
@@ -38,8 +40,8 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide 2",
+            "subheading": "Wygoda i styl bez kompromisów",
+            "title": "",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -47,7 +49,27 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 30,
+            "overlay_opacity": 50,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_RfLFTY": {
+          "type": "image",
+          "settings": {
+            "content_max_width": 720,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Coś nowego dla Twojej garderoby",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 50,
             "background": "",
             "background_gradient": ""
           }
@@ -55,7 +77,8 @@
       },
       "block_order": [
         "image_7Ay348",
-        "image_6DmrRH"
+        "image_6DmrRH",
+        "image_RfLFTY"
       ],
       "name": "Slideshow",
       "settings": {
@@ -70,35 +93,9 @@
         "background": "#f2f2f2",
         "background_gradient": ""
       }
-    },
-    "featured_collection_kEMRtM": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [],
-        "full_width": true,
-        "stack_products": true,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "Featured collection",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
     }
   },
   "order": [
-    "slideshow_NGcxtr",
-    "featured_collection_kEMRtM"
+    "slideshow_NGcxtr"
   ]
 }
