@@ -68,13 +68,13 @@
         "layout": "logo_left_navigation_center",
         "show_social_media": true,
         "show_locale_selector": true,
-        "show_country_selector": true,
-        "show_country_flag": true,
+        "show_country_selector": false,
+        "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
         "reduce_padding": true,
-        "background_opacity": 40,
-        "background_blur_radius": 10
+        "background_opacity": 0,
+        "background_blur_radius": 20
       }
     }
   },
