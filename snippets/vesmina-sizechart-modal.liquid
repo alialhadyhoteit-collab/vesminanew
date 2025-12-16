@@ -1,0 +1,19 @@
+<div id="vesmina-sizechart-modal" class="vesmina-modal" aria-hidden="true">
+  <div class="vesmina-modal__backdrop" data-vesmina-close></div>
+
+  <div class="vesmina-modal__panel" role="dialog" aria-modal="true" aria-label="Tabela rozmiarów">
+    <button type="button" class="vesmina-modal__close" data-vesmina-close aria-label="Zamknij">×</button>
+
+    <div class="vesmina-modal__content">
+      {% assign size_chart_page = pages['tabela-rozmiarow'] %}
+      {% if size_chart_page %}
+        <h3 class="vesmina-modal__title">{{ size_chart_page.title }}</h3>
+        <div class="vesmina-modal__html">
+          {{ size_chart_page.content }}
+        </div>
+      {% else %}
+        <p>Brak strony „tabela-rozmiarow”. Sprawdź nazwę linku (handle) strony.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
