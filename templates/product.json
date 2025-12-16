@@ -12,6 +12,17 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "variant_picker_Nx9RBP": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": "tabela-rozmiarow"
+          }
+        },
         "buy_buttons_RwkAPF": {
           "type": "buy_buttons",
           "settings": {
@@ -37,6 +48,7 @@
         }
       },
       "block_order": [
+        "variant_picker_Nx9RBP",
         "buy_buttons_RwkAPF",
         "title_fjYh7d",
         "price_VDj6mT"
