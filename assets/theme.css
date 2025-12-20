@@ -10140,24 +10140,3 @@ split-lines {
 .template-product .header .header__icon--cart svg {
   color: #c62828 !important; /* PRODUCT cart color */
 }
-
-/* ---------- FORCE SVG TO FOLLOW COLOR ---------- */
-.header a[href*="/cart"] svg *,
-.header .header__icon--cart svg * {
-  fill: currentColor !important;
-  stroke: currentColor !important;
-}
-.product-form__size-chart::before,
-.size-chart::before {
-  content: "📏";
-  margin-right: 60px;
-}
-/* Tighten size chart spacing (Impact) */
-.product-form__option + .size-chart,
-.product-form__info .size-chart {
-  margin-top: 3px !important;
-}
-
-.product-form__option {
-  margin-bottom: 3px !important;
-}
