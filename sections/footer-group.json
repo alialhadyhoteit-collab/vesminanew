@@ -23,14 +23,6 @@
             "content": ""
           }
         },
-        "links_L4R9qx": {
-          "type": "links",
-          "settings": {
-            "menu": "main-menu",
-            "show_menu_title": true,
-            "menu_title": ""
-          }
-        },
         "links": {
           "type": "links",
           "settings": {
@@ -42,7 +34,6 @@
       },
       "block_order": [
         "newsletter",
-        "links_L4R9qx",
         "links"
       ],
       "settings": {
