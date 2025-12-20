@@ -10150,7 +10150,7 @@ split-lines {
 .product-form__size-chart::before,
 .size-chart::before {
   content: "📏";
-  margin-right: 3px;
+  margin-right: 0px;
 }
 /* Tighten size chart spacing (Impact) */
 .product-form__option + .size-chart,
