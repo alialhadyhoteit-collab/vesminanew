@@ -10140,27 +10140,40 @@ split-lines {
 .template-product .header .header__icon--cart svg {
   color: #c62828 !important; /* PRODUCT cart color */
 }
-/* === Impact: tighten Size chart spacing === */
+/* ===== Impact: remove extra gap around Size chart (desktop + mobile) ===== */
 
-/* Reduce space under option label */
-.product-form__option-name {
-  margin-bottom: 4px !important;
-}
-
-/* Reduce space above size buttons */
-.product-form__option-values {
-  margin-top: 0 !important;
-}
-
-/* Move size chart closer to buttons */
-.product-form__size-chart,
-.size-chart {
-  margin-top: 2px !important;
-  display: inline-flex;
-  align-items: center;
-}
-
-/* Remove extra spacing wrappers */
-.product-form__option {
+/* The option row wrapper (often adds big spacing) */
+.product-form__option,
+.variant-picker__option,
+.product-form__info .product-form__option {
   margin-bottom: 6px !important;
+  padding-bottom: 0 !important;
 }
+
+/* The label row (“Size: S” / “Rozmiar: L”) */
+.product-form__option-name,
+.variant-picker__option-info,
+.variant-picker__option-title {
+  margin-bottom: 2px !important;
+  padding-bottom: 0 !important;
+  line-height: 1.2 !important;
+}
+
+/* The buttons row (XS/S/M/L…) */
+.product-form__option-values,
+.variant-picker__option-values,
+.variant-picker__values,
+.variant-picker__option-list {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* The size chart link itself */
+.product-form__size-chart,
+.size-chart,
+.variant-picker__size-chart {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  transform: translateY(-6px); /* pulls it up */
+}
+
