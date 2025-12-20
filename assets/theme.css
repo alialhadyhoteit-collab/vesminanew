@@ -10155,9 +10155,9 @@ split-lines {
 /* Tighten size chart spacing (Impact) */
 .product-form__option + .size-chart,
 .product-form__info .size-chart {
-  margin-top: 4px !important;
+  margin-top: 3px !important;
 }
 
 .product-form__option {
-  margin-bottom: 6px !important;
+  margin-bottom: 3px !important;
 }
