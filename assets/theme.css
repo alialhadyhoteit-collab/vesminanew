@@ -10152,3 +10152,12 @@ split-lines {
   content: "📏";
   margin-right: 6px;
 }
+/* Tighten size chart spacing (Impact) */
+.product-form__option + .size-chart,
+.product-form__info .size-chart {
+  margin-top: 4px !important;
+}
+
+.product-form__option {
+  margin-bottom: 6px !important;
+}
