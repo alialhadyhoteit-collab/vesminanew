@@ -10006,7 +10006,7 @@ split-lines {
 /* IMPACT: change ONLY the cart icon color */
 .header .header__icon--cart,
 .header .header__icon--cart svg {
-  color: #ffffff !important; /* <- change to your color */
+  color:hsl(0, 3.00%, 12.90%) !important; /* <- change to your color */
 }
 
 /* If the cart uses SVG sprite/use/path, force it too */
@@ -10124,7 +10124,7 @@ split-lines {
 .template-index .header a[href*="/cart"],
 .template-index .header .header__icon--cart,
 .template-index .header .header__icon--cart svg {
-  color: #ffffff !important; /* HOME cart color */
+  color:rgba(255, 255, 255, 0.93) !important; /* HOME cart color */
 }
 
 /* ---------- COLLECTION PAGE ---------- */
@@ -10139,41 +10139,5 @@ split-lines {
 .template-product .header .header__icon--cart,
 .template-product .header .header__icon--cart svg {
   color: #c62828 !important; /* PRODUCT cart color */
-}
-/* ===== Impact: remove extra gap around Size chart (desktop + mobile) ===== */
-
-/* The option row wrapper (often adds big spacing) */
-.product-form__option,
-.variant-picker__option,
-.product-form__info .product-form__option {
-  margin-bottom: 6px !important;
-  padding-bottom: 0 !important;
-}
-
-/* The label row (“Size: S” / “Rozmiar: L”) */
-.product-form__option-name,
-.variant-picker__option-info,
-.variant-picker__option-title {
-  margin-bottom: 2px !important;
-  padding-bottom: 0 !important;
-  line-height: 1.2 !important;
-}
-
-/* The buttons row (XS/S/M/L…) */
-.product-form__option-values,
-.variant-picker__option-values,
-.variant-picker__values,
-.variant-picker__option-list {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* The size chart link itself */
-.product-form__size-chart,
-.size-chart,
-.variant-picker__size-chart {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  transform: translateY(-6px); /* pulls it up */
 }
 
