@@ -78,10 +78,78 @@
         "background_opacity": 100,
         "background_blur_radius": 20
       }
+    },
+    "6_QYh7Tt": {
+      "type": "6",
+      "blocks": {
+        "tab_NFHBAp": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "heart",
+            "question": "Product description",
+            "answer": "<p>This is an answer</p>",
+            "answer_html": "{{ product.description }}"
+          }
+        },
+        "tab_iEX9UQ": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "truck",
+            "question": "Shipping",
+            "answer": "<p>This is an answer</p>",
+            "answer_html": ""
+          }
+        },
+        "tab_6bz4H3": {
+          "type": "tab",
+          "settings": {
+            "svg_color": "#121212",
+            "icon": "return_arrow",
+            "question": "Returns",
+            "answer": "<p>This is an answer</p>",
+            "answer_html": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_NFHBAp",
+        "tab_iEX9UQ",
+        "tab_6bz4H3"
+      ],
+      "name": "SS - Product Tabs",
+      "settings": {
+        "close_other": false,
+        "open_default": false,
+        "subtitle": "",
+        "subtitle_color": "#121212",
+        "subtitle_font_size": 10,
+        "title": "",
+        "title_font_size": 10,
+        "title_color": "#121212",
+        "arrow_size": 14,
+        "arrow_color": "#121212",
+        "icon_width": 22,
+        "text_color": "#121212",
+        "question_font_size": 13,
+        "answer_color": "#121212",
+        "answer_font_size": 12,
+        "border_color": "#f2f2f2",
+        "background-color": "#ffffff",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_x_desktop": 0,
+        "padding_x": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "button_padding_y": 10
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "6_QYh7Tt"
   ]
 }
