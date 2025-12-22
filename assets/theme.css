@@ -10133,6 +10133,6 @@ split-lines {
 .template-product .header a[href*="/cart"],
 .template-product .header .header__icon--cart,
 .template-product .header .header__icon--cart svg {
-  color: #c62828 !important; /* PRODUCT cart color */
+  color:rgb(0, 0, 0) !important; /* PRODUCT cart color */
 }
 
