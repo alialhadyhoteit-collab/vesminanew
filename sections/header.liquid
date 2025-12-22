@@ -738,67 +738,107 @@ the underlying logic of the menu.
   ]
 }
 {% endschema %}
+{% if template.name == 'collection' and collection %}
+  {% assign sub_menu = menus['women-collections'] %}
+  {% if sub_menu == blank %}
+    {% assign sub_menu = linklists['women-collections'] %}
+  {% endif %}
+
+  {% if sub_menu != blank %}
+    <nav class="collection-submenu" role="navigation" aria-label="Collection submenu">
+      <ul class="collection-submenu__list">
+        {% for link in sub_menu.links %}
+          {% assign is_active = false %}
+          {% if link.url == collection.url %}
+            {% assign is_active = true %}
+          {% endif %}
+
+          <li class="collection-submenu__item">
+            <a
+              class="collection-submenu__link{% if is_active %} is-active{% endif %}"
+              href="{{ link.url }}"
+              {% if is_active %}aria-current="page"{% endif %}
+            >
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+{% endif %}
+
 <style>
-/* ===== Collection Submenu (Mobile First) ===== */
-
-.collection-submenu {
-  background: #ffffff;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-
-/* Horizontal scroll container */
-.collection-submenu ul {
-  display: flex;
-  gap: 20px;
-  padding: 12px 14px;
-  margin: 0;
-  list-style: none;
-  overflow-x: auto;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Hide scrollbar (clean look) */
-.collection-submenu ul::-webkit-scrollbar {
-  display: none;
-}
-
-/* Links */
-.collection-submenu a {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #8a8a8a;
-  text-decoration: none;
-  padding: 6px 2px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Hover & tap */
-.collection-submenu a:hover {
-  color: #000;
-}
-
-/* Active collection highlight */
-.collection-submenu a[aria-current="page"],
-.collection-submenu a.active {
-  color: #000;
-  border-bottom-color: #000;
-}
-
-/* Desktop polish */
-@media (min-width: 990px) {
-  .collection-submenu ul {
-    justify-content: center;
-    gap: 28px;
+  /* ===== Collection Submenu (Impact-style, Mobile-first) ===== */
+  .collection-submenu{
+    background:#fff;
+    border-top:1px solid rgba(0,0,0,.08);
+    border-bottom:1px solid rgba(0,0,0,.08);
   }
 
-  .collection-submenu a {
-    font-size: 12px;
+  /* Scrollable row */
+  .collection-submenu__list{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin:0;
+    padding:12px 14px;
+    list-style:none;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+
+    -webkit-overflow-scrolling:touch;
+    scroll-behavior:smooth;
+
+    /* nicer "snap" swipe */
+    scroll-snap-type:x mandatory;
   }
-}
+
+  .collection-submenu__item{
+    scroll-snap-align:start;
+  }
+
+  /* Hide scrollbar (clean premium look) */
+  .collection-submenu__list::-webkit-scrollbar{ display:none; }
+  .collection-submenu__list{ scrollbar-width:none; }
+
+  .collection-submenu__link{
+    display:inline-block;
+    padding:6px 2px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+
+    color:rgba(0,0,0,.45);
+    text-decoration:none;
+
+    border-bottom:2px solid transparent;
+    transition: color .18s ease, border-color .18s ease;
+  }
+
+  .collection-submenu__link:hover{
+    color:rgba(0,0,0,.85);
+  }
+
+  .collection-submenu__link.is-active{
+    color:rgba(0,0,0,.95);
+    border-bottom-color:rgba(0,0,0,.95);
+  }
+
+  /* Desktop: center nicely */
+  @media (min-width: 990px){
+    .collection-submenu__list{
+      justify-content:center;
+      gap:28px;
+      padding:14px 18px;
+    }
+    .collection-submenu__link{
+      font-size:12px;
+    }
+  }
 </style>
