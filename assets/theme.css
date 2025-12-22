@@ -10003,11 +10003,6 @@ split-lines {
 .product-gallery__media.snap-center.is-selected {
   position: relative;
 }
-/* IMPACT: change ONLY the cart icon color */
-.header .header__icon--cart,
-.header .header__icon--cart svg {
-  color:hsl(0, 3.00%, 12.90%) !important; /* <- change to your color */
-}
 
 /* If the cart uses SVG sprite/use/path, force it too */
 .header .header__icon--cart svg * {
