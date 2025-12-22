@@ -98,49 +98,35 @@
         "background_gradient": ""
       }
     },
-    "rich_text_fiqzag": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_4HdFPL": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_FwYdQ3": {
-          "type": "heading",
-          "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_k4dQkP": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_4HdFPL",
-        "heading_FwYdQ3",
-        "richtext_k4dQkP"
-      ],
-      "name": "Rich text",
+    "featured_collection_JQBC7E": {
+      "type": "featured-collection",
+      "name": "Featured collection",
       "settings": {
+        "collection": "bestsellery",
+        "products": [],
         "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Bestsellery",
+        "content": "",
+        "link_url": "shopify://collections/bestsellery",
+        "link_text": "View all",
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     }
   },
   "order": [
     "slideshow_NGcxtr",
-    "rich_text_fiqzag"
+    "featured_collection_JQBC7E"
   ]
 }
