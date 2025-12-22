@@ -10079,38 +10079,6 @@ split-lines {
     );
     border: 1px solid #ccc;
 }
-/* -------------------------------------- */
-/* IMPACT THEME - CUSTOM PRICE COLORS & SMALLER SIZE */
-/* -------------------------------------- */
-
-/* Change the color and size of the current, new **SALE PRICE** */
-.price-list .text-on-sale,
-.price-list .sale-price {
-    color: #FF0000 !important; 
-    font-size: 18px !important; /* <--- SMALLER PRICE FONT SIZE (was 24px) */
-}
-
-/* Change the color and size of the **REGULAR PRICE** (the struck-out price) */
-.price-list .line-through {
-    color: #999999 !important; 
-    font-size: 18px !important; /* <--- SMALLER REGULAR PRICE FONT SIZE (was 24px) */
-}
-
-/* -------------------------------------- */
-/* SALE BADGE CUSTOMIZATION (Smaller Size) */
-/* -------------------------------------- */
-
-.badge--on-sale {
-    background-color: #FF0000 !important; 
-    color: #FFFFFF !important; 
-    
-    /* SMALLER SIZE ADJUSTMENT */
-    font-size: 10px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
-    
-    /* SMALLER PADDING ADJUSTMENT */
-    /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
-    padding: 4px 8px !important; /* <--- SMALLER BADGE BOX SIZE (was 6px 10px) */
-}
 /* ================================
    IMPACT – CART ICON COLOR PER PAGE
    ================================ */
@@ -10119,7 +10087,7 @@ split-lines {
 .template-index .header a[href*="/cart"],
 .template-index .header .header__icon--cart,
 .template-index .header .header__icon--cart svg {
-  color:rgba(255, 255, 255, 0.93) !important; /* HOME cart color */
+  color: #ffffff !important; /* HOME cart color */
 }
 
 /* ---------- COLLECTION PAGE ---------- */
@@ -10133,6 +10101,12 @@ split-lines {
 .template-product .header a[href*="/cart"],
 .template-product .header .header__icon--cart,
 .template-product .header .header__icon--cart svg {
-  color:rgb(0, 0, 0) !important; /* PRODUCT cart color */
+  color: #c62828 !important; /* PRODUCT cart color */
 }
 
+/* ---------- FORCE SVG TO FOLLOW COLOR ---------- */
+.header a[href*="/cart"] svg *,
+.header .header__icon--cart svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
