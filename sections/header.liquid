@@ -738,43 +738,67 @@ the underlying logic of the menu.
   ]
 }
 {% endschema %}
-{% if template.name == 'collection' %}
-  <nav class="collection-submenu">
-    <ul>
-      {% for link in linklists['women-collections'].links %}
-        <li>
-          <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-{% endif %}
 <style>
+/* ===== Collection Submenu (Mobile First) ===== */
+
 .collection-submenu {
+  background: #ffffff;
   border-top: 1px solid #eee;
-  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
+/* Horizontal scroll container */
 .collection-submenu ul {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  list-style: none;
+  gap: 20px;
+  padding: 12px 14px;
   margin: 0;
-  padding: 12px 16px;
+  list-style: none;
   overflow-x: auto;
-}
-
-.collection-submenu a {
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  color: #777;
-  text-decoration: none;
   white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
+/* Hide scrollbar (clean look) */
+.collection-submenu ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* Links */
+.collection-submenu a {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  text-decoration: none;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hover & tap */
 .collection-submenu a:hover {
   color: #000;
+}
+
+/* Active collection highlight */
+.collection-submenu a[aria-current="page"],
+.collection-submenu a.active {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+/* Desktop polish */
+@media (min-width: 990px) {
+  .collection-submenu ul {
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .collection-submenu a {
+    font-size: 12px;
+  }
 }
 </style>
