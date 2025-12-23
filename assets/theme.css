@@ -10122,13 +10122,13 @@ split-lines {
   align-items:center;
   justify-content:center;
   transform: translateY(0px);
-  color: rgba(0,0,0,.55);
+  color: #000000;
 }
 
 .sizechart-link__text{
   font-size:13px;
   font-weight:500;
-  color: rgba(0,0,0,.55);
+  color: #000000;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
