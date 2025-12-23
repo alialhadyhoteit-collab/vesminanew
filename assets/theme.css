@@ -10132,15 +10132,35 @@ split-lines {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-/* Change sale price color and size */
-.price-item.price-item--sale.price-item--last {
-  color: #FF0000;
-  font-size: 18px;
-  font-weight: bold;
+/* -------------------------------------- */
+/* IMPACT THEME - CUSTOM PRICE COLORS & SMALLER SIZE */
+/* -------------------------------------- */
+
+/* Change the color and size of the current, new **SALE PRICE** */
+.price-list .text-on-sale,
+.price-list .sale-price {
+    color: #FF0000 !important; 
+    font-size: 18px !important; /* <--- SMALLER PRICE FONT SIZE (was 24px) */
 }
 
-/* Change regular price color and size */
-.price-item.price-item--regular {
-  color: #000000;
-  font-size: 14px;
+/* Change the color and size of the **REGULAR PRICE** (the struck-out price) */
+.price-list .line-through {
+    color: #999999 !important; 
+    font-size: 18px !important; /* <--- SMALLER REGULAR PRICE FONT SIZE (was 24px) */
+}
+
+/* -------------------------------------- */
+/* SALE BADGE CUSTOMIZATION (Smaller Size) */
+/* -------------------------------------- */
+
+.badge--on-sale {
+    background-color: #FF0000 !important; 
+    color: #FFFFFF !important; 
+    
+    /* SMALLER SIZE ADJUSTMENT */
+    font-size: 10px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
+    
+    /* SMALLER PADDING ADJUSTMENT */
+    /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
+    padding: 4px 8px !important; /* <--- SMALLER BADGE BOX SIZE (was 6px 10px) */
 }
