@@ -10121,7 +10121,7 @@ split-lines {
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  transform: translateY(1px);
+  transform: translateY(4px);
   color: rgba(0,0,0,.55);
 }
 
@@ -10132,21 +10132,3 @@ split-lines {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.sizechart-icon-img{
-  display:block;
-  width:32px;          /* 2× bigger */
-  height:32px;
-  object-fit:contain;
-}
-
-.sizechart-link{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-}
-
-.sizechart-link__icon{
-  display:inline-flex;
-  transform: translateY(4px); /* adjust 3–5px if needed */
-}
-
