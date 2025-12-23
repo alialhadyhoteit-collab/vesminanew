@@ -10132,3 +10132,15 @@ split-lines {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+/* Change sale price color and size */
+.price-item.price-item--sale.price-item--last {
+  color: #FF0000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Change regular price color and size */
+.price-item.price-item--regular {
+  color: #000000;
+  font-size: 14px;
+}
