@@ -10110,3 +10110,25 @@ split-lines {
   fill: currentColor !important;
   stroke: currentColor !important;
 }
+.sizechart-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  line-height:1;
+}
+
+.sizechart-link__icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transform: translateY(1px);
+  color: rgba(0,0,0,.55);
+}
+
+.sizechart-link__text{
+  font-size:13px;
+  font-weight:500;
+  color: rgba(0,0,0,.55);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
