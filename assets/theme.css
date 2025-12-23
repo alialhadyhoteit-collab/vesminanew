@@ -10132,3 +10132,13 @@ split-lines {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+.sizechart-link{
+  display:inline-flex;
+  align-items:baseline; /* important */
+  gap:8px;
+}
+
+.sizechart-link__icon{
+  display:inline-flex;
+  transform: translateY(2px); /* pushes icon DOWN to match reference */
+}
