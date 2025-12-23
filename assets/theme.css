@@ -10121,7 +10121,7 @@ split-lines {
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  transform: translateY(10px);
+  transform: translateY(0px);
   color: rgba(0,0,0,.55);
 }
 
