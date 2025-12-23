@@ -10132,3 +10132,4 @@ split-lines {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+.sizechart-link__icon{ transform: translateY(2px); }
