@@ -87,11 +87,20 @@ Fallback page: /pages/tabela-rozmiarow
     >
       <span class="sizechart-link">
   <span class="sizechart-link__icon" aria-hidden="true">
-   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-  <rect x="4" y="6" width="16" height="12" rx="1.5"
+   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <!-- Tape body -->
+  <rect x="3.5" y="7" width="13" height="10" rx="4"
         stroke="currentColor" stroke-width="1.25"/>
-  <path d="M4 12h16M12 6v12"
-        stroke="currentColor" stroke-width="1.25"/>
+  
+  <!-- Tape opening -->
+  <path d="M16.5 12h4"
+        stroke="currentColor" stroke-width="1.25"
+        stroke-linecap="round"/>
+  
+  <!-- Measurement ticks -->
+  <path d="M7 10v2M10 10v1.5M13 10v2"
+        stroke="currentColor" stroke-width="1.25"
+        stroke-linecap="round"/>
 </svg>
   </span>
   <span class="link sizechart-link__text">Tabela rozmiarów</span>
