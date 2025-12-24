@@ -10227,3 +10227,9 @@ split-lines {
 .variant-picker__option-info .h-stack button[aria-controls]{
   margin-left: 0 !important;
 }
+/* Stronger override for Impact stacks */
+.variant-picker__option-info .h-stack.gap-2,
+.variant-picker__option-info .h-stack.gap-3{
+  justify-content: flex-start !important;
+  gap: 6px !important;
+}
