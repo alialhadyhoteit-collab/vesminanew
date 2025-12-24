@@ -47,7 +47,7 @@
     "show_sold_out_badge": true,
     "show_discount": true,
     "discount_mode": "saving",
-    "product_color_display": "swatch",
+    "product_color_display": "hide",
     "product_info_alignment": "start",
     "cart_type": "drawer",
     "cart_icon": "shopping_cart",
