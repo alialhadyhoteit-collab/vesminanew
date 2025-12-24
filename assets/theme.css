@@ -10198,7 +10198,7 @@ split-lines {
 .variant-picker__option-info{
   display:flex;
   align-items:center;
-  gap:6px !important; /* control spacing here */
+  gap:2px !important; /* control spacing here */
 }
 
 /* Remove auto-push / unwanted margins */
