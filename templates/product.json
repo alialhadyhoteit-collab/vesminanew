@@ -12,7 +12,7 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "variant_picker_Nx9RBP": {
+        "variant_picker_KjFPVF": {
           "type": "variant_picker",
           "settings": {
             "hide_sold_out_variants": false,
@@ -48,7 +48,7 @@
         }
       },
       "block_order": [
-        "variant_picker_Nx9RBP",
+        "variant_picker_KjFPVF",
         "buy_buttons_RwkAPF",
         "title_fjYh7d",
         "price_VDj6mT"
