@@ -10192,3 +10192,28 @@ split-lines {
   transform: translateY(2px);
   opacity:.85;
 }
+/* ===== Fix spacing between "Rozmiar" and "Tabela rozmiarów" ===== */
+
+/* Keep everything on one tight line */
+.variant-picker__option-info{
+  display:flex;
+  align-items:center;
+  gap:6px !important; /* control spacing here */
+}
+
+/* Remove auto-push / unwanted margins */
+.variant-picker__option-info button,
+.variant-picker__option-info a{
+  margin:0 !important;
+  padding:0 !important;
+}
+
+/* Make sure link does NOT jump to the right */
+.variant-picker__option-info button[aria-controls*="size"]{
+  margin-left:6px !important; /* small controlled gap */
+}
+
+/* Remove top spacing Impact adds */
+.variant-picker__option-info .link{
+  line-height:1;
+}
