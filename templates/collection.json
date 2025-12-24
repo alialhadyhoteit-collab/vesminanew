@@ -32,9 +32,7 @@
     },
     "main": {
       "type": "main-collection",
-      "custom_css": [
-        ".product-list img {background-color: #f7f7f7; /* Remplacez #f0f0f0 par la couleur de fond souhaitée */}"
-      ],
+      "custom_css": [],
       "settings": {
         "products_per_page": 24,
         "products_per_row_mobile": "2",
