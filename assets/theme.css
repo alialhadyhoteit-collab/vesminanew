@@ -10210,3 +10210,7 @@ split-lines {
   align-items: center !important;
   gap: 8px !important;
 }
+/* kill any auto spacing that forces right alignment */
+.variant-picker__option-info .h-stack .link{
+  margin-left: 0 !important;
+}
