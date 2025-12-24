@@ -10164,3 +10164,31 @@ split-lines {
     /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
     padding: 4px 8px !important; /* <--- SMALLER BADGE BOX SIZE (was 6px 10px) */
 }
+/* ===== Luxury style for Impact's original Size chart link ===== */
+
+/* Put icon + text inline and aligned */
+.variant-picker__option-info button[aria-controls*="size"],
+.variant-picker__option-info a[href*="size"]{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* Text look */
+.variant-picker__option-info button[aria-controls*="size"] .link,
+.variant-picker__option-info a[href*="size"] .link{
+  font-size:13px;
+  font-weight:500;
+  color: rgba(0,0,0,.55);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Optional: smaller/lighter icon */
+.variant-picker__option-info button[aria-controls*="size"] svg,
+.variant-picker__option-info a[href*="size"] svg{
+  width:18px;
+  height:18px;
+  transform: translateY(2px);
+  opacity:.85;
+}
