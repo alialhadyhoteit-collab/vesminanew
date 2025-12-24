@@ -144,10 +144,11 @@
         "collection_E8czpt": {
           "type": "collection",
           "settings": {
-            "collection": "mezczyzni",
+            "collection": "",
+            "image": "shopify://shop_images/t-shirt-store.jpg",
             "subheading": "",
             "title": "",
-            "url": "",
+            "url": "shopify://collections/bestsellery-1",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
