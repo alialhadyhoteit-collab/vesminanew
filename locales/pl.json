@@ -94,7 +94,7 @@
       "taxes_included": "W tym podatek.",
       "taxes_excluded": "Bez podatku.",
       "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link\">Koszt dostawy</a> przy kasie",
-      "size_chart": "🌀 📏Tabela rozmiarów",
+      "size_chart": "📐Tabela rozmiarów",
       "available_colors_count": {
         "one": "{{ count }} dostępny kolor",
         "few": "{{ count }} dostępne kolory",
