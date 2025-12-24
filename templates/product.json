@@ -30,6 +30,12 @@
             "show_taxes_notice": false
           }
         },
+        "liquid_7Fn7C3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
         "liquid_8DP7AY": {
           "type": "liquid",
           "settings": {
@@ -45,6 +51,12 @@
             "swatch_selector_style": "none",
             "variant_image_options": "",
             "size_chart_page": "tabela-rozmiarow"
+          }
+        },
+        "liquid_4TgAKG": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  /* Unique wrapper so theme styles can't override */\n  .vesmina-stock-wrap{\n    width:100%;\n    max-width:100%;\n    padding:0;\n    margin:0;\n  }\n\n  .vesmina-stock{\n    display:flex;\n    align-items:center;\n    gap:8px;\n    padding:3px 0;\n    margin:0;\n    width:100%;\n  }\n\n  /* Red dot */\n  .vesmina-dot{\n    width:12px;\n    height:12px;\n    background:#c94444;\n    border-radius:50%;\n    flex-shrink:0;\n    position:relative;\n    animation: vesminaPulse 2s infinite;\n  }\n\n  .vesmina-dot::before{\n    content:'';\n    position:absolute;\n    top:50%;\n    left:50%;\n    transform:translate(-50%,-50%);\n    width:100%;\n    height:100%;\n    background:#c94444;\n    border-radius:50%;\n    animation: vesminaWave 2s infinite;\n    opacity:0;\n  }\n\n  @keyframes vesminaPulse{\n    0%,100%{ transform:scale(1); }\n    50%{ transform:scale(1.1); }\n  }\n\n  @keyframes vesminaWave{\n    0%{ transform:translate(-50%,-50%) scale(1); opacity:.8; }\n    100%{ transform:translate(-50%,-50%) scale(2.5); opacity:0; }\n  }\n\n  /* TEXT — force red + bold */\n  .vesmina-stock-text{\n    font-size:14px !important;\n    font-weight:700 !important;\n    color:#c94444 !important;\n    line-height:1.4 !important;\n    margin:0 !important;\n  }\n\n  /* Mobile */\n  @media (max-width:768px){\n    .vesmina-stock{ gap:6px; padding:2px 0; }\n    .vesmina-dot{ width:10px; height:10px; }\n    .vesmina-stock-text{ font-size:13px !important; }\n  }\n\n  @media (max-width:480px){\n    .vesmina-stock{ gap:10px; }\n    .vesmina-dot{ width:9px; height:9px; }\n    .vesmina-stock-text{ font-size:15px !important; }\n  }\n</style>\n\n<div class=\"vesmina-stock-wrap\">\n  <div class=\"vesmina-stock\">\n    <span class=\"vesmina-dot\" aria-hidden=\"true\"></span>\n    <span class=\"vesmina-stock-text\">Ograniczona ilość w magazynie</span>\n  </div>\n</div>"
           }
         },
         "buy_buttons_RwkAPF": {
@@ -63,8 +75,10 @@
         "liquid_pVzCcm",
         "title_fjYh7d",
         "price_VDj6mT",
+        "liquid_7Fn7C3",
         "liquid_8DP7AY",
         "variant_picker_KjFPVF",
+        "liquid_4TgAKG",
         "buy_buttons_RwkAPF"
       ],
       "custom_css": [],
