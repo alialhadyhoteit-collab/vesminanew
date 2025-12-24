@@ -10233,3 +10233,35 @@ split-lines {
   justify-content: flex-start !important;
   gap: 6px !important;
 }
+/* === FORCE size label + value + size chart link to stay together (Impact) === */
+
+/* Target the row that contains legend + variant-option-value + size chart button */
+.variant-picker__option-info > .h-stack,
+.variant-picker__option-info > .h-stack.gap-2,
+.variant-picker__option-info > .h-stack.gap-3,
+.variant-picker__option-info > div.h-stack {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 6px !important;
+}
+
+/* Stop the selected value from stretching/pushing content */
+.variant-picker__option-info variant-option-value,
+.variant-picker__option-info .h-stack variant-option-value {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Stop the size chart trigger from auto pushing to the right */
+.variant-picker__option-info button[aria-controls],
+.variant-picker__option-info a[aria-controls] {
+  margin-left: 0 !important;
+  padding: 0 !important;
+}
+
+/* If theme uses "margin-inline-start:auto" anywhere, kill it */
+.variant-picker__option-info * {
+  margin-inline-start: 0 !important;
+}
