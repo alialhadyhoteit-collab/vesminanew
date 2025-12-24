@@ -67,7 +67,14 @@ Supported variables
             </button>
 
             <x-drawer id="{{ drawer_id }}" class="drawer drawer--lg">
-              <span class="h5" slot="header">{{ block.settings.size_chart_page.title }}</span>
+              <span class="h5" slot="header">{%- assign chart_page = product.metafields.custom.size_chart_page.value -%}
+
+{%- if chart_page != blank -%}
+  {{ chart_page.content }}
+{%- else -%}
+  {{ block.settings.size_chart_page.content }}
+{%- endif -%}
+</span>
 
               <div class="prose">
                 {{- block.settings.size_chart_page.content -}}
