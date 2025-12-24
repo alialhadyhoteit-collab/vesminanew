@@ -62,19 +62,12 @@ Supported variables
           {%- if hide_size_chart != true and block.settings.size_chart_page != blank and size_label_list contains option_downcase -%}
             {%- capture drawer_id -%}size-chart-{{ section.id }}-{{ block.id }}{%- endcapture -%}
 
-            <button type="button" class="text-sm text-subdued" aria-controls="size-chart-single-{{ drawer_id | escape }}" aria-expanded="false">
+            <button type="button" class="text-sm text-subdued" aria-controls="{{ drawer_id | escape }}" aria-expanded="false">
               <span class="link">{{ 'product.general.size_chart' | t }}</span>
             </button>
 
             <x-drawer id="{{ drawer_id }}" class="drawer drawer--lg">
-              <span class="h5" slot="header">{%- assign chart_page = product.metafields.custom.size_chart_page.value -%}
-
-{%- if chart_page != blank -%}
-  {{ chart_page.content }}
-{%- else -%}
-  {{ block.settings.size_chart_page.content }}
-{%- endif -%}
-</span>
+              <span class="h5" slot="header">{{ block.settings.size_chart_page.title }}</span>
 
               <div class="prose">
                 {{- block.settings.size_chart_page.content -}}
