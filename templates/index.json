@@ -272,7 +272,7 @@
             "image": "shopify://shop_images/ChatGPT_Image_Dec_24_2025_05_39_28_PM.png",
             "title": "WYPRZEDAŻ ZIMOWA",
             "heading_tag": "h2",
-            "link_url": "",
+            "link_url": "shopify://collections/bestsellery",
             "link_text": "",
             "mobile_text_position": "place-self-center text-center",
             "desktop_column_span": 4,
@@ -285,7 +285,7 @@
             "button_background": "#000000",
             "button_text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 51
           }
         },
         "image_FaaAYd": {
