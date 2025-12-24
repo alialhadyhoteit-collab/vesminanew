@@ -10217,3 +10217,13 @@ split-lines {
 .variant-picker__option-info .link{
   line-height:1;
 }
+/* FIX: remove big spacing between "Rozmiar: 36" and "Tabela rozmiarów" */
+.variant-picker__option-info .h-stack{
+  justify-content: flex-start !important; /* stops pushing link to the right */
+  gap: 6px !important;                   /* control the spacing */
+}
+
+/* Make sure the size-chart button doesn't auto-push right */
+.variant-picker__option-info .h-stack button[aria-controls]{
+  margin-left: 0 !important;
+}
