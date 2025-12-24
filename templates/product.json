@@ -75,6 +75,12 @@
           "settings": {
             "liquid": "<style>\n  .vesmina-shipbar{\n    background:#f8f8f8;\n    padding:10px 15px;\n    border-radius:8px;\n    width:100%;\n    display:flex;\n    justify-content:space-between;\n    align-items:center;\n    gap:14px;\n    margin:0;\n  }\n\n  .vesmina-ship-left,\n  .vesmina-ship-right{\n    display:flex;\n    align-items:center;\n    gap:8px;\n    min-width:0;\n  }\n\n  .vesmina-ship-right{\n    margin-left:auto;\n  }\n\n  .vesmina-dot{\n    width:12px;\n    height:12px;\n    background:#4caf50;\n    border-radius:50%;\n    position:relative;\n    animation: vesminaPulse 2s infinite;\n    flex-shrink:0;\n  }\n\n  .vesmina-dot::before{\n    content:'';\n    position:absolute;\n    top:50%;\n    left:50%;\n    transform:translate(-50%,-50%);\n    width:100%;\n    height:100%;\n    background:#4caf50;\n    border-radius:50%;\n    animation: vesminaWave 2s infinite;\n    opacity:0;\n  }\n\n  @keyframes vesminaPulse{\n    0%,100%{ transform:scale(1); }\n    50%{ transform:scale(1.1); }\n  }\n\n  @keyframes vesminaWave{\n    0%{ transform:translate(-50%,-50%) scale(1); opacity:.8; }\n    100%{ transform:translate(-50%,-50%) scale(2.5); opacity:0; }\n  }\n\n  .vesmina-ship-text{\n    font-size:13px;\n    font-weight:600;\n    color:#333;\n    white-space:nowrap;\n  }\n\n  .vesmina-flag-img{\n    width:18px;\n    height:12px;\n    display:block;\n    object-fit:cover;\n    border-radius:2px;\n    flex-shrink:0;\n  }\n\n  .vesmina-fast{\n    font-size:13px;\n    font-weight:600;\n    color:#333;\n    white-space:nowrap;\n  }\n\n  @media (max-width: 768px){\n    .vesmina-shipbar{ padding:8px 12px; gap:12px; }\n    .vesmina-ship-text, .vesmina-fast{ font-size:12px; }\n    .vesmina-dot{ width:10px; height:10px; }\n    .vesmina-flag-img{ width:16px; height:11px; }\n  }\n\n  @media (max-width: 480px){\n    .vesmina-shipbar{\n      padding:8px 10px;\n      gap:10px;\n      flex-wrap:wrap;\n    }\n    .vesmina-ship-text, .vesmina-fast{\n      font-size:11px;\n      white-space:normal;\n    }\n    .vesmina-dot{ width:9px; height:9px; }\n    .vesmina-flag-img{ width:15px; height:10px; }\n  }\n</style>\n\n<div class=\"vesmina-shipbar\" role=\"note\" aria-label=\"Informacje o wysyłce\">\n  <div class=\"vesmina-ship-left\">\n    <span class=\"vesmina-dot\" aria-hidden=\"true\"></span>\n    <span class=\"vesmina-ship-text\" id=\"vesmina-ship-date\">Wysłane: jutro</span>\n  </div>\n\n  <div class=\"vesmina-ship-right\">\n    <img\n      class=\"vesmina-flag-img\"\n      src=\"https://cdn.shopify.com/s/files/1/1004/5118/9077/files/323338.png?v=1766600424\"\n      alt=\"Polska\"\n      loading=\"lazy\"\n    >\n    <span class=\"vesmina-fast\">Szybka dostawa</span>\n  </div>\n</div>\n\n<script>\n  (function () {\n    function pad2(n){ return String(n).padStart(2,'0'); }\n\n    var today = new Date();\n    var d = new Date(today);\n    d.setDate(today.getDate() + 1); // +1 day\n\n    var dd = pad2(d.getDate());\n    var mm = pad2(d.getMonth() + 1);\n\n    var el = document.getElementById('vesmina-ship-date');\n    if (el) el.textContent = \"Wysłane: jutro, \" + dd + \"/\" + mm;\n  })();\n</script>"
           }
+        },
+        "description_xPzDkw": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
         }
       },
       "block_order": [
@@ -86,7 +92,8 @@
         "variant_picker_KjFPVF",
         "liquid_4TgAKG",
         "buy_buttons_RwkAPF",
-        "liquid_y7wkgN"
+        "liquid_y7wkgN",
+        "description_xPzDkw"
       ],
       "custom_css": [],
       "settings": {
