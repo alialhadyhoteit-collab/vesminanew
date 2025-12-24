@@ -66,20 +66,23 @@ Supported variables
               <span class="link">{{ 'product.general.size_chart' | t }}</span>
             </button>
 
-            <x-drawer id="{{ drawer_id }}" class="drawer drawer--lg">
-              <span class="h5" slot="header">{%- assign chart_page = product.metafields.custom.size_chart_page.value -%}
+            {%- unless size_chart_drawer_rendered -%}
+  {%- assign size_chart_drawer_rendered = true -%}
 
-{%- if chart_page != blank -%}
-  {{ chart_page.content }}
-{%- else -%}
-  {{ block.settings.size_chart_page.content }}
-{%- endif -%}
-</span>
+  <x-drawer id="size-chart-single-{{ product.id }}" class="drawer drawer--lg">
+    <span class="h5" slot="header">Tabela rozmiarów</span>
 
-              <div class="prose">
-                {{- block.settings.size_chart_page.content -}}
-              </div>
-            </x-drawer>
+    <div class="prose">
+      {%- assign chart_page = product.metafields.custom.size_chart_page.value -%}
+
+      {%- if chart_page != blank -%}
+        {{ chart_page.content }}
+      {%- else -%}
+        {{ block.settings.size_chart_page.content }}
+      {%- endif -%}
+    </div>
+  </x-drawer>
+{%- endunless -%}
           {%- endif -%}
         </div>
 
