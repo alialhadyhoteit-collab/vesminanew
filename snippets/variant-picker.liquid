@@ -54,67 +54,26 @@ Supported variables
 
       <fieldset class="variant-picker__option">
         <div class="variant-picker__option-info">
-          {%- comment -%}
-CUSTOM SIZE CHART (Impact)
-Shows icon + "Tabela rozmiarów" next to Rozmiar
-Loads per-product page from metafield: custom.size_chart_page
-Fallback page: /pages/tabela-rozmiarow
-{%- endcomment -%}
+          <div class="h-stack gap-2">
+            <legend class="text-subdued">{{ option.name }}:</legend>
+            <variant-option-value form="{{ form_id }}" for="option{{ option.position }}">{{ option.selected_value }}</variant-option-value>
+          </div>
 
-{%- assign option_downcase = option.name | downcase -%}
-{%- assign is_size_option = false -%}
-{%- if option_downcase == 'rozmiar' or option_downcase == 'size' or option_downcase contains 'rozmiar' -%}
-  {%- assign is_size_option = true -%}
-{%- endif -%}
+          {%- if hide_size_chart != true and block.settings.size_chart_page != blank and size_label_list contains option_downcase -%}
+            {%- capture drawer_id -%}size-chart-{{ section.id }}-{{ block.id }}{%- endcapture -%}
 
-{%- if is_size_option -%}
-  {%- capture drawer_id -%}size-chart-{{ section.id }}-{{ block.id }}{%- endcapture -%}
-{%- endif -%}
+            <button type="button" class="text-sm text-subdued" aria-controls="{{ drawer_id | escape }}" aria-expanded="false">
+              <span class="link">{{ 'product.general.size_chart' | t }}</span>
+            </button>
 
-<div class="h-stack gap-2 size-label-row">
-  <legend class="text-subdued">{{ option.name }}:</legend>
+            <x-drawer id="{{ drawer_id }}" class="drawer drawer--lg">
+              <span class="h5" slot="header">{{ block.settings.size_chart_page.title }}</span>
 
-  <variant-option-value form="{{ form_id }}" for="option{{ option.position }}">
-    {{ option.selected_value }}
-  </variant-option-value>
-
-  {%- if is_size_option -%}
-    <button
-      type="button"
-      class="text-sm text-subdued"
-      aria-controls="{{ drawer_id | escape }}"
-      aria-expanded="false"
-    >
-      <span class="sizechart-link">
-  <span class="sizechart-link__icon" aria-hidden="true">
- <svg width="35" height="20" viewBox="0 0 24 24" fill="none">
-  <rect x="3" y="5" width="18" height="14" rx="2"
-        stroke="currentColor" stroke-width="1.5"/>
-  <path d="M3 10h18M8 5v14M16 5v14"
-        stroke="currentColor" stroke-width="1.5"/>
-</svg>
-  </span>
-  <span class="link sizechart-link__text">Tabela rozmiarów</span>
-</span>
-    </button>
-  {%- endif -%}
-</div>
-
-{%- if is_size_option -%}
-  <x-drawer id="{{ drawer_id }}" class="drawer drawer--lg">
-    <span class="h5" slot="header">Tabela rozmiarów</span>
-
-    <div class="prose">
-      {%- assign chart_page = product.metafields.custom.size_chart_page.value -%}
-
-      {%- if chart_page != blank -%}
-        {{ chart_page.content }}
-      {%- else -%}
-        {{ pages['tabela-rozmiarow'].content }}
-      {%- endif -%}
-    </div>
-  </x-drawer>
-{%- endif -%}
+              <div class="prose">
+                {{- block.settings.size_chart_page.content -}}
+              </div>
+            </x-drawer>
+          {%- endif -%}
         </div>
 
         {%- if resolved_option_selector_style == 'dropdown' -%}
