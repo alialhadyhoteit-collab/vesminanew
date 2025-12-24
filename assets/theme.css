@@ -10214,3 +10214,19 @@ split-lines {
 .variant-picker__option-info .h-stack .link{
   margin-left: 0 !important;
 }
+/* Soena-like: keep "Rozmiar: 36" + "Tabela rozmiarów" together */
+.size-label-row{
+  justify-content: flex-start !important;
+  gap: 8px !important;
+}
+
+/* This is the common reason it's pushed to the right */
+.size-label-row > *{
+  margin-inline-start: 0 !important;
+}
+
+/* If the theme sets auto margin on the size chart button/link, kill it */
+.size-label-row button,
+.size-label-row a{
+  margin-left: 0 !important;
+}
