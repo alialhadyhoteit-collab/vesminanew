@@ -62,8 +62,7 @@ Supported variables
           {%- if hide_size_chart != true and block.settings.size_chart_page != blank and size_label_list contains option_downcase -%}
             {%- capture drawer_id -%}size-chart-{{ section.id }}-{{ block.id }}{%- endcapture -%}
 
-            <button type="button" class="text-sm text-subdued" aria-controls="size-chart-single-{{ product.id }}"
- aria-expanded="false">
+            <button type="button" class="text-sm text-subdued" aria-controls="{{ drawer_id | escape }}" aria-expanded="false">
               <span class="link">{{ 'product.general.size_chart' | t }}</span>
             </button>
 
