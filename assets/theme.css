@@ -10230,4 +10230,11 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 }
+/* Remove spacing for Custom liquid blocks on product page */
+.template-product .product__block--no-space{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 
