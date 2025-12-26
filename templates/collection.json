@@ -30,8 +30,139 @@
         "overlay_opacity": 30
       }
     },
+    "collection_list_xtLVgg": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_YcDBQM": {
+          "type": "collection",
+          "settings": {
+            "collection": "buty",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_AjCLNP": {
+          "type": "collection",
+          "settings": {
+            "collection": "komplety",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_KHkgWc": {
+          "type": "collection",
+          "settings": {
+            "collection": "sandaly",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_4QykCB": {
+          "type": "collection",
+          "settings": {
+            "collection": "letnie-kaftan",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_K8mt74": {
+          "type": "collection",
+          "settings": {
+            "collection": "spodnie",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_NEpX7g": {
+          "type": "collection",
+          "settings": {
+            "collection": "stroje-kapielowe",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_bCNfCQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "sukienki",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_YcDBQM",
+        "collection_AjCLNP",
+        "collection_KHkgWc",
+        "collection_4QykCB",
+        "collection_K8mt74",
+        "collection_NEpX7g",
+        "collection_bCNfCQ"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "2",
+        "collections_per_row": 3,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "main": {
       "type": "main-collection",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "products_per_page": 24,
@@ -48,6 +179,7 @@
   },
   "order": [
     "banner",
+    "collection_list_xtLVgg",
     "main"
   ]
 }
