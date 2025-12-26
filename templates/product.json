@@ -400,6 +400,102 @@
         "product_card_background": "",
         "product_card_text_color": ""
       }
+    },
+    "ss_scrolling_images_JFcmXU": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_MWYQH7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_27_2025_01_35_56_AM.png",
+            "url": ""
+          }
+        },
+        "image_y9FBm6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_27_2025_01_35_56_AM_7304aac4-72a2-44eb-a0cc-04d914674d2e.png",
+            "url": ""
+          }
+        },
+        "image_4FtAaK": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_qRDR3A": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_pcRzMe": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_MWYQH7",
+        "image_y9FBm6",
+        "image_4FtAaK",
+        "image_qRDR3A",
+        "image_pcRzMe"
+      ],
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "<p>VESMINA</p>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 13,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 300,
+        "image_width_mobile": 120,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "image_radius": 10,
+        "use_content": true,
+        "content_position": "center",
+        "content_max_width": 340,
+        "content_max_width_mobile": 340,
+        "content_padding_vertical": 30,
+        "content_padding_horizontal": 30,
+        "content_distance": 60,
+        "content_radius": 10,
+        "content_border_thickness": 0,
+        "use_shadow": true,
+        "text": "<p>Ponad 9 000 klientek w Polsce — społeczność Vesmina stale się powiększa.</p>",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 24,
+        "text_height": 130,
+        "heading_color": "#000000",
+        "content_bg": "#FFFFFF",
+        "content_border_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
     }
   },
   "order": [
@@ -407,6 +503,7 @@
     "17667849997448b9ba",
     "23_gzTAyr",
     "1766786850aa4823f5",
-    "related_products_4ciMMy"
+    "related_products_4ciMMy",
+    "ss_scrolling_images_JFcmXU"
   ]
 }
