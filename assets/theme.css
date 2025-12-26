@@ -10230,3 +10230,8 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 }
+/* 🔥 Remove default spacing for Custom Liquid block on product page */
+.template-product .shopify-block.custom-liquid {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
