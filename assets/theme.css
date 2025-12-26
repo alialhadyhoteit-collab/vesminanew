@@ -10275,4 +10275,10 @@ split-lines {
   margin-block-start: 0 !important;
   margin-block-end: 0 !important;
 }
+/* Remove section block spacing ONLY inside product information */
+.template-product .product__info-container .product__block,
+.template-product .product__info-container .shopify-block {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 
