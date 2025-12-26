@@ -176,13 +176,23 @@
     "23_gzTAyr": {
       "type": "23",
       "blocks": {
-        "item_XkqfJe": {
+        "item_t8RHpB": {
           "type": "item",
           "settings": {
             "stars_count": 5,
-            "heading": "I love it! 😍",
-            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
-            "author_date": "Cathrine",
+            "heading": "Dokładnie jak na zdjęciach",
+            "text": "„Trochę się obawiałam zamawiania, ale wszystko przyszło idealne. Rozmiar się zgadza, krój super leży, a kolor wygląda jeszcze lepiej na żywo.”",
+            "author_date": "Magdalena",
+            "author_image": "shopify://shop_images/polish-women-face.png"
+          }
+        },
+        "item_XkqfJe": {
+          "type": "item",
+          "settings": {
+            "stars_count": 4.5,
+            "heading": "Uwielbiam! 😍",
+            "text": "„Na początku miałam pewne wątpliwości, ale po pierwszym zamówieniu jestem naprawdę pozytywnie zaskoczona. Materiał jest świetnej jakości, krój leży idealnie, a całość wygląda dokładnie tak jak na zdjęciach.”",
+            "author_date": "Joanna",
             "author_image": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_11_54_55_PM.png"
           }
         },
@@ -190,13 +200,15 @@
           "type": "item",
           "settings": {
             "stars_count": 5,
-            "heading": "I love it! 😍",
-            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
-            "author_date": "Cathrine"
+            "heading": "Świetna jakość 🤍",
+            "text": "„Ubranie wygląda bardzo elegancko, a materiał jest miękki i przyjemny w noszeniu. Widać dbałość o detale. Zdecydowanie jedna z lepszych rzeczy, jakie zamawiałam online.”",
+            "author_date": "Eve",
+            "author_image": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_11_54_55_PM_4f62e9bf-47ec-4dc9-8bba-922747478f70.png"
           }
         }
       },
       "block_order": [
+        "item_t8RHpB",
         "item_XkqfJe",
         "item_N3CFNc"
       ],
@@ -204,13 +216,13 @@
       "settings": {
         "content_align": "center",
         "content_align_mobile": "center",
-        "heading": "Our customers tell it better than we do!",
+        "heading": "Nasi klienci mówią to najlepiej",
         "heading_custom": false,
         "heading_font": "josefin_sans_n4",
         "heading_size": 40,
         "heading_size_mobile": 24,
         "heading_height": 130,
-        "rating_text": "Excellent",
+        "rating_text": "Ocena",
         "rating_text_custom": false,
         "rating_text_font": "josefin_sans_n4",
         "rating_text_size": 24,
@@ -221,10 +233,10 @@
         "rating": 4.7,
         "rating_hide": false,
         "rating_text_hide": false,
-        "stars_count": 5,
+        "stars_count": 4.5,
         "stars_size": 28,
         "stars_size_mobile": 24,
-        "text": "<p>based on <strong>1 067</strong> reviews</p>",
+        "text": "<p>na podstawie <strong>1 067 opinii</strong></p>",
         "text_custom": false,
         "text_font": "josefin_sans_n4",
         "text_size": 20,
@@ -232,16 +244,16 @@
         "text_height": 130,
         "text_mt": 16,
         "text_mt_mobile": 16,
-        "scrolling_velocity": 80,
-        "scrolling_velocity_mobile": 100,
+        "scrolling_velocity": 112,
+        "scrolling_velocity_mobile": 20,
         "reverse_direction": false,
         "pause_hover": true,
         "scrolling_mt": 36,
         "scrolling_mt_mobile": 36,
         "scrolling_gap": 20,
-        "scrolling_gap_mobile": 20,
+        "scrolling_gap_mobile": 12,
         "card_width": 360,
-        "card_width_mobile": 280,
+        "card_width_mobile": 300,
         "card_padding_vertical": 36,
         "card_padding_vertical_mobile": 28,
         "card_padding_horizontal": 40,
@@ -254,10 +266,10 @@
         "card_height": false,
         "card_heading_custom": false,
         "card_heading_font": "josefin_sans_n4",
-        "card_heading_size": 24,
-        "card_heading_size_mobile": 20,
-        "card_heading_height": 130,
-        "card_heading_mt": 16,
+        "card_heading_size": 0,
+        "card_heading_size_mobile": 12,
+        "card_heading_height": 50,
+        "card_heading_mt": 0,
         "card_heading_mt_mobile": 16,
         "card_text_custom": false,
         "card_text_font": "josefin_sans_n4",
@@ -279,7 +291,7 @@
         "card_author_date_text_height": 130,
         "card_author_date_text_mt": 16,
         "card_author_date_text_mt_mobile": 16,
-        "button": "View All",
+        "button": "",
         "button_url": "",
         "button_custom": false,
         "button_font": "josefin_sans_n4",
