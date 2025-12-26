@@ -10230,8 +10230,49 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 }
-/* Force-remove spacing for Custom Liquid block (product page) */
-.template-product [class*="custom-liquid"] {
+/* =========================================================
+   Vesmina – Remove spacing around Custom Liquid (product page)
+   Put this at the VERY BOTTOM of base.css / theme.css
+   ========================================================= */
+
+/* OS 2.0 common block wrappers */
+.template-product .shopify-block--custom-liquid,
+.template-product .shopify-block.custom-liquid,
+.template-product .shopify-block.custom-liquid-block {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Impact / many themes: product blocks are wrapped like .product__block */
+.template-product .product__block--custom-liquid,
+.template-product .product__block--custom_liquid,
+.template-product .product__block[data-block-type="custom_liquid"],
+.template-product .product__block[data-block-type="custom-liquid"] {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Generic safety net: any element mentioning custom-liquid in class */
+.template-product [class*="custom-liquid"],
+.template-product [class*="custom_liquid"] {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
+/* If the theme applies spacing to ALL product blocks (common) */
+.template-product .product__info-container > * {
+  /* leave this alone normally */
+}
+
+/* But if your theme uses "margin-block" for block spacing (newer CSS) */
+.template-product .shopify-block--custom-liquid,
+.template-product .product__block--custom-liquid,
+.template-product .product__block--custom_liquid {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
