@@ -14,36 +14,26 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "text_iqkzpU": {
-          "type": "text",
-          "settings": {
-            "title": "About our store",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
-            "enable_follow_on_shop": true
-          }
-        },
-        "newsletter": {
-          "type": "newsletter",
-          "settings": {
-            "image_width": 150,
-            "heading_size": "h3",
-            "title": "",
-            "content": ""
-          }
-        },
-        "links": {
+        "links_7NApEa": {
           "type": "links",
           "settings": {
             "menu": "footer",
             "show_menu_title": true,
             "menu_title": ""
           }
+        },
+        "text_jCVrzW": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "content": "<ul><li><strong>Poniedziałek – Piątek:</strong> 09:00 – 18:00 CET<br/></li><li><strong>Sobota:</strong> 09:00 – 17:00 CET<br/></li><li><strong>Niedziela:</strong> 10:00 – 16:00 CET<br/></li></ul><p>📧 <strong>Kontakt:</strong> <a>contact@vesmina.pl</a><br/><br/>📍 <strong>Lokalizacja:</strong> Warszawa, Polska 🇵🇱</p>",
+            "enable_follow_on_shop": false
+          }
         }
       },
       "block_order": [
-        "text_iqkzpU",
-        "newsletter",
-        "links"
+        "links_7NApEa",
+        "text_jCVrzW"
       ],
       "settings": {
         "show_social_media": true,
