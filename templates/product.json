@@ -172,10 +172,72 @@
         "ai_gen_block_827e7d0_FbCtDQ"
       ],
       "settings": {}
+    },
+    "1766786850aa4823f5": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_672b602_nAQ38L": {
+          "type": "ai_gen_block_672b602",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_11_58_34_PM.png",
+            "image_border_radius": 24,
+            "heading": "Ręcznie wykonane",
+            "description": "<p><br/>Vesmina oferuje starannie wyselekcjonowaną odzież i akcesoria, tworzone z dbałością o detale i jakość.<br/><br/>Każdy produkt łączy ponadczasowy styl, komfort noszenia i naturalną elegancję.<br/><br/></p>",
+            "content_max_width": 1000,
+            "text_max_width": 600,
+            "spacing_mobile": 20,
+            "spacing_desktop": 30,
+            "section_padding_mobile": 20,
+            "section_padding_desktop": 40,
+            "heading_size_mobile": 26,
+            "heading_size_desktop": 42,
+            "heading_weight": "700",
+            "heading_transform": "uppercase",
+            "heading_spacing_mobile": 12,
+            "heading_spacing_desktop": 16,
+            "heading_color": "#000000",
+            "text_size_mobile": 14,
+            "text_size_desktop": 16,
+            "text_line_height": 1.4,
+            "text_color": "#333333",
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_672b602_nAQ38L"
+      ],
+      "settings": {}
+    },
+    "related_products_4ciMMy": {
+      "type": "related-products",
+      "name": "Related products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Może Ci się spodobać",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
     }
   },
   "order": [
     "main",
-    "17667849997448b9ba"
+    "17667849997448b9ba",
+    "1766786850aa4823f5",
+    "related_products_4ciMMy"
   ]
 }
