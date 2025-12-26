@@ -93,6 +93,22 @@
           "settings": {
             "collapse_content": false
           }
+        },
+        "collapsible_text_KKeYCL": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "INFORMACJE O WYSYŁCE",
+            "content": "<p><strong>Vesmina</strong> oferuje <strong>darmową dostawę na terenie całej Polski</strong> oraz <strong>bezpieczną wysyłkę zagraniczną</strong>.</p><ul><li><br/>Zamówienia są przetwarzane <strong>w ciągu 24 godzin od potwierdzenia płatności</strong>.<br/></li><li><br/>Każdej przesyłce przypisywany jest <strong>indywidualny numer śledzenia</strong>, wysyłany na adres e-mail.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_text_RjctHk": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "30-DNIOWA GWARANCJA ZWROTU",
+            "content": "<p>W <strong>Vesmina</strong> oferujemy <strong>30-dniową gwarancję zwrotu</strong>, aby zapewnić pełne zadowolenie z zakupów.</p><p>Jeśli produkt nie spełnia Twoich oczekiwań, możesz go zwrócić <strong>w ciągu 30 dni od daty otrzymania zamówienia</strong>.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -107,7 +123,9 @@
         "liquid_y7wkgN",
         "liquid_DWmEcH",
         "liquid_zNiUBe",
-        "description_xPzDkw"
+        "description_xPzDkw",
+        "collapsible_text_KKeYCL",
+        "collapsible_text_RjctHk"
       ],
       "custom_css": [],
       "settings": {
