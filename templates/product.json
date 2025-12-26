@@ -499,6 +499,81 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "text_with_icons_xQbLyb": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_dctcDe": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Darmowa wysyłka",
+            "content": "<p>Oferujemy darmową wysyłkę w Polsce.</p>"
+          }
+        },
+        "item_dd3AAp": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Obsługa klienta",
+            "content": "<p>Oferujemy całodobową obsługę klienta, 7 dni w tygodniu. Zawsze możesz zadać nam pytanie, a nasi eksperci odpowiedzą w ciągu 24 godzin!</p>"
+          }
+        },
+        "item_enWniB": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Ponad 2300 recenzji",
+            "content": "<p>Mamy ponad 25 000 klientów, którzy nam ufają, oraz ponad 2 300, którzy zostawili opinię, z średnią oceną</p>"
+          }
+        },
+        "item_RhTGkK": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Bezpieczna płatność",
+            "content": "<p>Każda płatność u nas jest w 100% bezpieczna i objęta gwarancją bezpieczeństwa.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_dctcDe",
+        "item_dd3AAp",
+        "item_enWniB",
+        "item_RhTGkK"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h3",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -507,6 +582,7 @@
     "23_gzTAyr",
     "1766786850aa4823f5",
     "related_products_4ciMMy",
-    "ss_scrolling_images_JFcmXU"
+    "ss_scrolling_images_JFcmXU",
+    "text_with_icons_xQbLyb"
   ]
 }
