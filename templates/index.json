@@ -102,7 +102,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "bestsellery",
+        "collection": "stroje-kapielowe",
         "products": [],
         "full_width": true,
         "stack_products": false,
