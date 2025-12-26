@@ -145,9 +145,37 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
+    },
+    "17667849997448b9ba": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_827e7d0_FbCtDQ": {
+          "type": "ai_gen_block_827e7d0",
+          "settings": {
+            "avatar_1": "shopify://shop_images/polish-women-face.png",
+            "avatar_2": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_11_54_55_PM.png",
+            "show_third_avatar": true,
+            "avatar_3": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_11_54_55_PM_4f62e9bf-47ec-4dc9-8bba-922747478f70.png",
+            "avatar_size": 32,
+            "trust_message": "<strong>Joanna, Eve</strong> oraz ponad <strong>25 000 klientów</strong> wybrało Vesmina.",
+            "text_size": 14,
+            "background_color": "#ffffff",
+            "text_color": "#333333",
+            "placeholder_color": "#e8e8e8",
+            "padding": 8,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_827e7d0_FbCtDQ"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "17667849997448b9ba"
   ]
 }
