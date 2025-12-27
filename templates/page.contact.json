@@ -20,9 +20,9 @@
       "type": "contact",
       "settings": {
         "full_width": true,
-        "subheading": "Skontaktuj się z nami",
-        "title": "Masz pytania dotyczące zamówienia, produktu lub dostawy?Jesteśmy tutaj, żeby pomóc.",
-        "content": "",
+        "subheading": "",
+        "title": "Skontaktuj się z nami",
+        "content": "<p>Masz pytania dotyczące zamówienia, produktu lub dostawy?Jesteśmy tutaj, żeby pomóc.</p>",
         "text_position": "start",
         "contact_form_size": "large",
         "background": "",
