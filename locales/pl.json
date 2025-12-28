@@ -435,5 +435,10 @@
         "other": "Ma {{ count }} opinii."
       }
     }
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": "vesmina.pl"
+    }
   }
 }
