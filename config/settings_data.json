@@ -70,7 +70,7 @@
       },
       "12075128526103414267": {
         "type": "shopify://apps/bundlex/blocks/volume-discount-embed/c017a4b2-071a-4809-a2c2-1c5768f46bb9",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "hide_quantity": false,
           "custom_placement_selector": "",
