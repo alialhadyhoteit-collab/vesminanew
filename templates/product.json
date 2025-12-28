@@ -91,7 +91,7 @@
         "description_xPzDkw": {
           "type": "description",
           "settings": {
-            "collapse_content": false
+            "collapse_content": true
           }
         },
         "collapsible_text_KKeYCL": {
