@@ -30,6 +30,12 @@
             "show_taxes_notice": false
           }
         },
+        "liquid_jWAQYC": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"vesmina-liveview\" aria-live=\"polite\">\n  <span class=\"vesmina-liveview__icon\" aria-hidden=\"true\">\n    <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\">\n      <path d=\"M1.5 12s4-7.5 10.5-7.5S22.5 12 22.5 12s-4 7.5-10.5 7.5S1.5 12 1.5 12Z\" stroke=\"currentColor\" stroke-width=\"1.6\"/>\n      <circle cx=\"12\" cy=\"12\" r=\"3\" stroke=\"currentColor\" stroke-width=\"1.6\"/>\n    </svg>\n  </span>\n\n  <span class=\"vesmina-liveview__text\">\n    <strong id=\"vesminaLiveCount\">60</strong>\n    <span>osób ogląda to teraz</span>\n  </span>\n</div>\n\n<style>\n  .vesmina-liveview{\n    display:flex;\n    align-items:center;\n    gap:10px;\n    font-size:14px;\n    line-height:1.2;\n    color: inherit;\n    margin: 10px 0;\n  }\n  .vesmina-liveview__icon{\n    display:inline-flex;\n    align-items:center;\n    justify-content:center;\n    opacity:.85;\n  }\n  .vesmina-liveview__text strong{\n    font-weight:600;\n    margin-right:6px;\n  }\n\n  /* Mobile-first spacing like screenshot */\n  @media (max-width: 749px){\n    .vesmina-liveview{\n      font-size:14px;\n      margin: 8px 0;\n    }\n  }\n</style>\n\n<script>\n  // ✅ REAL data only: point this to YOUR endpoint that returns { \"count\": 123 }\n  // Example: /apps/live-viewers?handle={{ product.handle }}\n  (function(){\n    const el = document.getElementById('vesminaLiveCount');\n    if(!el) return;\n\n    const endpoint = null; // <-- set to a real endpoint URL when you have it\n\n    if(!endpoint) return; // no fake updates\n\n    async function refresh(){\n      try{\n        const res = await fetch(endpoint, { cache: 'no-store' });\n        if(!res.ok) return;\n        const data = await res.json();\n        if(typeof data.count === 'number' && data.count >= 0){\n          el.textContent = Math.round(data.count);\n        }\n      }catch(e){}\n    }\n\n    refresh();\n    setInterval(refresh, 5000); // update every 5s (realistic + lighter)\n  })();\n</script>"
+          }
+        },
         "liquid_7Fn7C3": {
           "type": "liquid",
           "settings": {
@@ -115,6 +121,7 @@
         "liquid_pVzCcm",
         "title_fjYh7d",
         "price_VDj6mT",
+        "liquid_jWAQYC",
         "liquid_7Fn7C3",
         "liquid_8DP7AY",
         "variant_picker_KjFPVF",
