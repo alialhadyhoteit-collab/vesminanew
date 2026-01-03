@@ -10230,31 +10230,10 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 }
-/* Remove spacing for Custom liquid blocks on product page */
-.template-product .product__block--no-space{
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-/* Impact: tighten spacing between blocks in Product information */
-.product__info > * + *,
-.product-info > * + *{
-  margin-top: 8px !important; /* change to 6px or 4px if you want tighter */
-}
-/* Aggressive: flatten vertical spacing inside Product information */
-.product__info *{
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-.product__info > * + *,
-.product-info > * + *{
-  margin-top: 8px !important;
-}
-
-@media (max-width: 749px){
-  .product__info > * + *,
-  .product-info > * + *{
-    margin-top: 6px !important;
-  }
+/* 🔥 Impact: remove spacing above & below this block */
+.product__info .vesmina-shipbar,
+.product-info .vesmina-shipbar,
+.product-form .vesmina-shipbar{
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
 }
