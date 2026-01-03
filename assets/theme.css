@@ -10237,4 +10237,8 @@ split-lines {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-
+/* Impact: tighten spacing between blocks in Product information */
+.product__info > * + *,
+.product-info > * + *{
+  margin-top: 8px !important; /* change to 6px or 4px if you want tighter */
+}
