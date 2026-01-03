@@ -44,6 +44,81 @@
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+    {% if template.name == 'product' %}
+  <style>
+    /* VESMINA: force tight spacing on product page */
+    .shopify-section,
+    .section,
+    .section__content,
+    .page-width{
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* Product info column: remove extra space between blocks */
+    .product__info,
+    .product__info-container,
+    .product__info-wrapper,
+    .product-info{
+      row-gap: 0px !important;
+      gap: 0px !important;
+    }
+
+    .product__info > * + *,
+    .product__info-container > * + *,
+    .product__info-wrapper > * + *,
+    .product-info > * + *{
+      margin-top: 0px !important;
+    }
+
+    /* Kill wrapper spacing that often adds the “huge gaps” */
+    .product__info :is(.shopify-block, .product__block, [data-block-id]),
+    .product__info-container :is(.shopify-block, .product__block, [data-block-id]),
+    .product__info-wrapper :is(.shopify-block, .product__block, [data-block-id]),
+    .product-info :is(.shopify-block, .product__block, [data-block-id]){
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    /* Make it closer to Add to Cart */
+    .product-form,
+    .product__form,
+    .product-form__buttons,
+    .product__buy-buttons{
+      margin-top: 0px !important;
+      padding-top: 0 !important;
+    }
+
+    @media (max-width: 749px){
+      .product__info,
+      .product__info-container,
+      .product__info-wrapper,
+      .product-info{
+        row-gap: 0px !important;
+        gap: 0px !important;
+      }
+
+      .product__info > * + *,
+      .product__info-container > * + *,
+      .product__info-wrapper > * + *,
+      .product-info > * + *{
+        margin-top: 0px !important;
+      }
+
+      .product-form,
+      .product__form,
+      .product-form__buttons,
+      .product__buy-buttons{
+        margin-top: 0px !important;
+      }
+    }
+  </style>
+{% endif %}
+
   </head>
 
   <body class="{% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">
