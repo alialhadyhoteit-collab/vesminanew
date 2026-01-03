@@ -10230,33 +10230,3 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 }
-/* ✅ Impact: tighten spacing between ALL blocks in product info (product page only) */
-.template-product :is(.product__info, .product__info-container, .product__info-wrapper, .product-info){
-  gap: 8px !important; /* if layout uses flex/grid gap */
-}
-
-/* ✅ Most Impact blocks are wrapped like this */
-.template-product :is(.product__info, .product__info-container, .product__info-wrapper, .product-info)
-  :is(.shopify-block, .product__block, .product__info-block){
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* ✅ Add controlled spacing between blocks (works even if margins were zeroed) */
-.template-product :is(.product__info, .product__info-container, .product__info-wrapper, .product-info)
-  :is(.shopify-block, .product__block, .product__info-block) + :is(.shopify-block, .product__block, .product__info-block){
-  margin-top: 8px !important; /* change to 6px / 4px */
-}
-
-/* ✅ Mobile a bit tighter */
-@media (max-width: 749px){
-  .template-product :is(.product__info, .product__info-container, .product__info-wrapper, .product-info){
-    gap: 0px !important;
-  }
-  .template-product :is(.product__info, .product__info-container, .product__info-wrapper, .product-info)
-    :is(.shopify-block, .product__block, .product__info-block) + :is(.shopify-block, .product__block, .product__info-block){
-    margin-top: 0px !important;
-  }
-}
