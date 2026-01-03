@@ -10230,19 +10230,63 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 }
-/* IMPACT – tighten spacing between ALL blocks in product info */
-.template-product :is(.product__info-container, .product__info, .product-info, .product__info-wrapper) > * + *{
-  margin-top: 6px !important;   /* <-- change to 4px if you want tighter */
+/* ========== VESMINA: Tight product page spacing (Impact) ========== */
+.template-product :is(
+  .section,
+  .section__content,
+  .product,
+  .product__content,
+  .product__info,
+  .product__info-container,
+  .product__info-wrapper,
+  .product-info
+){
+  /* If spacing is controlled by gap */
+  gap: 6px !important;
 }
 
-/* If blocks are wrapped, kill wrapper margins so the rule above controls spacing */
-.template-product :is(.product__info-container, .product__info, .product-info, .product__info-wrapper)
-  :is(.shopify-block, .product__block, [data-block-id]){
+/* Kill extra spacing created by margins/paddings around blocks */
+.template-product :is(
+  .product__info,
+  .product__info-container,
+  .product__info-wrapper,
+  .product-info
+) :is(
+  .shopify-block,
+  .product__block,
+  [data-block-id],
+  [class*="block"]
+){
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
+
+/* Re-add a small consistent spacing between blocks */
+.template-product :is(
+  .product__info,
+  .product__info-container,
+  .product__info-wrapper,
+  .product-info
+) > * + *{
+  margin-top: 6px !important; /* try 4px if you want tighter */
+}
+
+/* If spacing is coming from the product section itself */
+.template-product :is(.section, .section__content){
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Mobile: even tighter */
 @media (max-width: 749px){
-  .template-product :is(.product__info-container, .product__info, .product-info, .product__info-wrapper) > * + *{
-    margin-top: 0px !important;
+  .template-product :is(
+    .product__info,
+    .product__info-container,
+    .product__info-wrapper,
+    .product-info
+  ) > * + *{
+    margin-top: 4px !important;
   }
 }
