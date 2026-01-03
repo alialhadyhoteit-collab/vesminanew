@@ -10270,7 +10270,7 @@ split-lines {
   .product__info-wrapper,
   .product-info
 ) > * + *{
-  margin-top: 6px !important; /* try 4px if you want tighter */
+  margin-top: 2px !important; /* try 2px if you want tighter */
 }
 
 /* If spacing is coming from the product section itself */
@@ -10287,6 +10287,6 @@ split-lines {
     .product__info-wrapper,
     .product-info
   ) > * + *{
-    margin-top: 4px !important;
+    margin-top: 2px !important;
   }
 }
