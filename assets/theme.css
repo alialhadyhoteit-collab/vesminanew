@@ -10241,3 +10241,8 @@ split-lines {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+@media (max-width: 749px){
+  .template-product :is(.product__info-container, .product__info, .product-info, .product__info-wrapper) > * + *{
+    margin-top: 0px !important;
+  }
+}
