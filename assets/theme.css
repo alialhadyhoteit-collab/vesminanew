@@ -10247,3 +10247,14 @@ split-lines {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+.product__info > * + *,
+.product-info > * + *{
+  margin-top: 8px !important;
+}
+
+@media (max-width: 749px){
+  .product__info > * + *,
+  .product-info > * + *{
+    margin-top: 6px !important;
+  }
+}
