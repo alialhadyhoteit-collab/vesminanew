@@ -46,51 +46,61 @@
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
     {% if template.name == 'product' %}
 <style>
-  /* ✅ Remove the big gap UNDER Add to cart (Impact / Shopify payment button spacing) */
-  body.template-product .product-form__buttons,
-  body.template-product .product__buttons,
-  body.template-product .product-form__button-group{
-    margin-bottom: 6px !important;
-    padding-bottom: 0 !important;
-    gap: 6px !important;
-  }
-
-  /* Dynamic checkout button wrapper (often creates empty space) */
+  /* 1) Kill ANY empty/hidden payment/dynamic containers under ATC */
   body.template-product .shopify-payment-button,
   body.template-product .shopify-payment-button__button,
-  body.template-product .shopify-payment-button__more-options{
+  body.template-product .shopify-payment-button__more-options,
+  body.template-product .shopify-payment-button__button--hidden,
+  body.template-product .shopify-payment-button__button--unbranded,
+  body.template-product [data-shopify="payment-button"],
+  body.template-product .dynamic-checkout,
+  body.template-product .dynamic-checkout__content,
+  body.template-product .accelerated-checkout,
+  body.template-product .payment-terms,
+  body.template-product .shopify-installments,
+  body.template-product .installments{
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 2) Tighten the buy buttons block itself (this is where the gap usually is) */
+  body.template-product .product-form__buttons,
+  body.template-product .product__buttons,
+  body.template-product .product-form__button-group,
+  body.template-product .product-form__buttons-wrapper{
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  /* 3) Remove margin under the actual Add to cart button */
+  body.template-product .product-form__submit,
+  body.template-product button[name="add"],
+  body.template-product .button--add-to-cart{
+    margin-bottom: 0 !important;
+  }
+
+  /* 4) Pull the next block up (whatever it is: ship bar, trust icons, etc.) */
+  body.template-product :is(.product__info, .product__info-container, .product__info-wrapper, .product-info) > *{
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
   }
 
-  /* If "Buy it now" is hidden/disabled but wrapper remains, collapse it */
-  body.template-product .shopify-payment-button:empty{
-    display: none !important;
-  }
-
-  /* ✅ Tighten spacing for anything immediately after the buy buttons (your ship bar, icons, etc.) */
-  body.template-product .product-form__buttons + *,
-  body.template-product .product__buttons + *{
+  body.template-product :is(.product-form, .product__form) + *{
     margin-top: 6px !important;
   }
 
   @media (max-width: 749px){
-    body.template-product .product-form__buttons,
-    body.template-product .product__buttons,
-    body.template-product .product-form__button-group{
-      margin-bottom: 4px !important;
-      gap: 4px !important;
-    }
-
-    body.template-product .product-form__buttons + *,
-    body.template-product .product__buttons + *{
+    body.template-product :is(.product-form, .product__form) + *{
       margin-top: 4px !important;
     }
   }
 </style>
 {% endif %}
+
   </head>
 
   <body class="{% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">
