@@ -10140,7 +10140,7 @@ split-lines {
 .price-list .text-on-sale,
 .price-list .sale-price {
     color: #FF0000 !important; 
-    font-size: 16px !important; /* <--- SMALLER PRICE FONT SIZE (was 24px) */
+    font-size: 18px !important; /* <--- SMALLER PRICE FONT SIZE (was 24px) */
 }
 
 /* Change the color and size of the **REGULAR PRICE** (the struck-out price) */
@@ -10158,7 +10158,7 @@ split-lines {
     color: #FFFFFF !important; 
     
     /* SMALLER SIZE ADJUSTMENT */
-    font-size: 12px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
+    font-size: 10px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
     
     /* SMALLER PADDING ADJUSTMENT */
     /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
