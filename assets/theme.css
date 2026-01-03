@@ -10242,3 +10242,8 @@ split-lines {
 .product-info > * + *{
   margin-top: 8px !important; /* change to 6px or 4px if you want tighter */
 }
+/* Aggressive: flatten vertical spacing inside Product information */
+.product__info *{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
