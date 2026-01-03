@@ -10230,3 +10230,14 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 }
+/* IMPACT – tighten spacing between ALL blocks in product info */
+.template-product :is(.product__info-container, .product__info, .product-info, .product__info-wrapper) > * + *{
+  margin-top: 6px !important;   /* <-- change to 4px if you want tighter */
+}
+
+/* If blocks are wrapped, kill wrapper margins so the rule above controls spacing */
+.template-product :is(.product__info-container, .product__info, .product-info, .product__info-wrapper)
+  :is(.shopify-block, .product__block, [data-block-id]){
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
