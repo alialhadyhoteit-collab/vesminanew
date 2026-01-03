@@ -10140,7 +10140,7 @@ split-lines {
 .price-list .text-on-sale,
 .price-list .sale-price{
     color: #FF0000 !important;
-    font-size: 18px !important;
+    font-size: 15px !important;
     font-weight: 700 !important; /* ✅ BOLD ONLY PRICE */
 }
 
