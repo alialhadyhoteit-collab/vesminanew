@@ -44,6 +44,88 @@
     {{ content_for_header }}
 
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+    {% if template.name == 'product' %}
+<style>
+  /* Optional: make shipbar + custom blocks not add extra spacing */
+  .vesmina-liveview, .vesmina-shipbar { margin: 0 !important; }
+</style>
+
+<script>
+  (function(){
+    function applyTightSpacing(){
+      // Try to locate the product info column (right side on desktop, main stack on mobile)
+      var info =
+        document.querySelector('.product__info') ||
+        document.querySelector('.product__info-container') ||
+        document.querySelector('.product__info-wrapper') ||
+        document.querySelector('.product-info');
+
+      if(!info) return;
+
+      // 1) If theme uses flex/grid gap, force it smaller
+      info.style.gap = '6px';
+      info.style.rowGap = '6px';
+
+      // 2) Tighten ALL direct children spacing inside product info
+      var kids = Array.prototype.slice.call(info.children || []);
+      kids.forEach(function(el, idx){
+        if(!el || el.nodeType !== 1) return;
+
+        // Remove padding/margins that create big gaps
+        el.style.marginTop = (idx === 0 ? '0px' : '6px');
+        el.style.marginBottom = '0px';
+        el.style.paddingTop = '0px';
+        el.style.paddingBottom = '0px';
+
+        // Collapse empty wrappers that often keep height
+        var text = (el.textContent || '').replace(/\s+/g,'').trim();
+        var hasMedia = el.querySelector && el.querySelector('img,svg,video,button,input,select,textarea');
+        if(!text && !hasMedia){
+          el.style.display = 'none';
+          el.style.height = '0px';
+          el.style.minHeight = '0px';
+        }
+      });
+
+      // 3) Make the area right under the ATC button not create extra space
+      var form =
+        document.querySelector('.product-form') ||
+        document.querySelector('.product__form');
+
+      if(form){
+        form.style.marginBottom = '0px';
+        form.style.paddingBottom = '0px';
+      }
+
+      // Mobile tighter
+      if(window.matchMedia && window.matchMedia('(max-width: 749px)').matches){
+        info.style.gap = '4px';
+        info.style.rowGap = '4px';
+        kids.forEach(function(el, idx){
+          if(!el || el.nodeType !== 1) return;
+          el.style.marginTop = (idx === 0 ? '0px' : '4px');
+        });
+      }
+    }
+
+    // Run after the page is built
+    if(document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', applyTightSpacing);
+    } else {
+      applyTightSpacing();
+    }
+
+    // Also re-apply after variant changes (some themes re-render blocks)
+    document.addEventListener('change', function(e){
+      var t = e.target;
+      if(t && (t.name === 'id' || t.closest && t.closest('variant-picker, .variant-picker, .product-form'))){
+        setTimeout(applyTightSpacing, 50);
+      }
+    });
+  })();
+</script>
+{% endif %}
+
   </head>
 
   <body class="{% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">
