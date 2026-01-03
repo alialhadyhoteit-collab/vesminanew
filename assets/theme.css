@@ -10170,7 +10170,7 @@ split-lines {
     color: #FFFFFF !important; 
     
     /* SMALLER SIZE ADJUSTMENT */
-    font-size: 15px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
+    font-size: 12px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
     
     /* SMALLER PADDING ADJUSTMENT */
     /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
