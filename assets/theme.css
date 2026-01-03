@@ -10253,10 +10253,10 @@ split-lines {
 /* ✅ Mobile a bit tighter */
 @media (max-width: 749px){
   .template-product :is(.product__info, .product__info-container, .product__info-wrapper, .product-info){
-    gap: 6px !important;
+    gap: 0px !important;
   }
   .template-product :is(.product__info, .product__info-container, .product__info-wrapper, .product-info)
     :is(.shopify-block, .product__block, .product__info-block) + :is(.shopify-block, .product__block, .product__info-block){
-    margin-top: 6px !important;
+    margin-top: 0px !important;
   }
 }
