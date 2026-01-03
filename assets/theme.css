@@ -10140,7 +10140,7 @@ split-lines {
 .price-list .text-on-sale,
 .price-list .sale-price {
     color: #FF0000 !important; 
-    font-size: 18px !important; /* <--- SMALLER PRICE FONT SIZE (was 24px) */
+    font-size: 20px !important; /* <--- SMALLER PRICE FONT SIZE (was 24px) */
 }
 
 /* Change the color and size of the **REGULAR PRICE** (the struck-out price) */
