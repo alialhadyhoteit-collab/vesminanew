@@ -10230,32 +10230,36 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 }
-/* ========== VESMINA: Tight product page spacing (Impact) ========== */
-.template-product :is(
-  .section,
-  .section__content,
-  .product,
-  .product__content,
-  .product__info,
-  .product__info-container,
-  .product__info-wrapper,
-  .product-info
-){
-  /* If spacing is controlled by gap */
-  gap: 6px !important;
+/* =========================================================
+   VESMINA – PRODUCT PAGE SPACING RESET (Impact / Shopify)
+   Paste at END of main CSS file
+   ========================================================= */
+
+/* 1) Reduce section padding on product page (top/bottom) */
+body.template-product .shopify-section,
+body.template-product .section,
+body.template-product .section__content,
+body.template-product .page-width,
+body.template-product .page-width--narrow{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-/* Kill extra spacing created by margins/paddings around blocks */
-.template-product :is(
+/* 2) Tighten the whole product layout wrappers */
+body.template-product :is(
+  .product,
+  .product__content,
+  .product__main,
+  .product__media,
   .product__info,
   .product__info-container,
   .product__info-wrapper,
-  .product-info
-) :is(
-  .shopify-block,
-  .product__block,
-  [data-block-id],
-  [class*="block"]
+  .product-info,
+  .product__details,
+  .product__form,
+  .product-form
 ){
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -10263,30 +10267,25 @@ split-lines {
   padding-bottom: 0 !important;
 }
 
-/* Re-add a small consistent spacing between blocks */
-.template-product :is(
+/* 3) If theme uses flex/grid GAP anywhere in product area, force it smaller */
+body.template-product :is(
+  .product,
+  .product__content,
+  .product__main,
   .product__info,
   .product__info-container,
   .product__info-wrapper,
   .product-info
-) > * + *{
-  margin-top: 2px !important; /* try 2px if you want tighter */
+){
+  gap: 6px !important; /* desktop gap */
 }
 
-/* If spacing is coming from the product section itself */
-.template-product :is(.section, .section__content){
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Mobile: even tighter */
-@media (max-width: 749px){
-  .template-product :is(
-    .product__info,
-    .product__info-container,
-    .product__info-wrapper,
-    .product-info
-  ) > * + *{
-    margin-top: 2px !important;
-  }
-}
+/* 4) Force tight spacing between ALL blocks inside product info column */
+body.template-product :is(
+  .product__info,
+  .product__info-container,
+  .product__info-wrapper,
+  .product-info
+) > *{
+  margin-top: 0 !important;
+  margin-botto
