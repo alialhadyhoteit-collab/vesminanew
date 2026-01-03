@@ -10141,7 +10141,7 @@ split-lines {
 .price-list .sale-price{
     color: #FF0000 !important;
     font-size: 18px !important;
-    font-weight: 7000 !important; /* ✅ BOLD ONLY PRICE */
+    font-weight: 700 !important; /* ✅ BOLD ONLY PRICE */
 }
 
 /* REGULAR (COMPARE AT) PRICE – bold */
