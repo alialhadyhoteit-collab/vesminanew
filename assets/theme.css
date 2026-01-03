@@ -10136,18 +10136,30 @@ split-lines {
 /* IMPACT THEME - CUSTOM PRICE COLORS & SMALLER SIZE */
 /* -------------------------------------- */
 
-/* Change the color and size of the current, new **SALE PRICE** */
+/* SALE PRICE – bold */
 .price-list .text-on-sale,
-.price-list .sale-price {
-    color: #FF0000 !important; 
-    font-size: 20px !important; /* <--- SMALLER PRICE FONT SIZE (was 24px) */
+.price-list .sale-price{
+    color: #FF0000 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important; /* ✅ BOLD ONLY PRICE */
 }
 
-/* Change the color and size of the **REGULAR PRICE** (the struck-out price) */
-.price-list .line-through {
-    color: #999999 !important; 
-    font-size: 16px !important; /* <--- SMALLER REGULAR PRICE FONT SIZE (was 24px) */
+/* REGULAR (COMPARE AT) PRICE – bold */
+.price-list .line-through{
+    color: #999999 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important; /* ✅ BOLD ONLY PRICE */
 }
+
+/* ❌ Make sure discount badge is NOT bold */
+.price-list .badge,
+.price-list .discount,
+.price-list .saving,
+.price-list [class*="badge"],
+.price-list [class*="discount"]{
+    font-weight: 400 !important;
+}
+
 
 /* -------------------------------------- */
 /* SALE BADGE CUSTOMIZATION (Smaller Size) */
@@ -10158,7 +10170,7 @@ split-lines {
     color: #FFFFFF !important; 
     
     /* SMALLER SIZE ADJUSTMENT */
-    font-size: 20px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
+    font-size: 15px !important; /* <--- SMALLER BADGE TEXT FONT SIZE (was 12px) */
     
     /* SMALLER PADDING ADJUSTMENT */
     /* Vertical padding (Top/Bottom) | Horizontal padding (Left/Right) */
