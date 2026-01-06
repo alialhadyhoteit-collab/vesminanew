@@ -134,7 +134,9 @@
         "collapsible_text_KKeYCL",
         "collapsible_text_RjctHk"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".product-card img {max-height: 500px !important; /* Force the height for images in product cards */ width: auto; display: block; margin: 0 auto;}"
+      ],
       "settings": {
         "full_width": false,
         "show_fixed_add_to_cart": true,
