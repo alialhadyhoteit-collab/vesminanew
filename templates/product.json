@@ -135,7 +135,7 @@
         "collapsible_text_RjctHk"
       ],
       "custom_css": [
-        ".product-single__photos img {max-width: 50%; /* Adjust the percentage to your preferred size */ height: auto; margin: 0 auto; /* This will center the image */}"
+        ".product-single__photos img {max-width: 30%; /* Adjust the percentage to your preferred size */ height: auto; margin: 0 auto; /* This will center the image */}"
       ],
       "settings": {
         "full_width": false,
