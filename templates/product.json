@@ -134,9 +134,7 @@
         "collapsible_text_KKeYCL",
         "collapsible_text_RjctHk"
       ],
-      "custom_css": [
-        ".impact-product-card__image img {max-height: 500px !important; /* Force the image height */ width: auto; display: block; margin: 0 auto; /* Center the image */}"
-      ],
+      "custom_css": [],
       "settings": {
         "full_width": false,
         "show_fixed_add_to_cart": true,
