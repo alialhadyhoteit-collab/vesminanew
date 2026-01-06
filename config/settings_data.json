@@ -188,7 +188,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".impact-product-card__image img {max-height: 300px !important; /* Force the image height */ width: auto; display: block; margin: 0 auto; /* Center the image */}"
+      ".impact-product-card__image img {max-height: 100px !important; /* Force the image height */ width: auto; display: block; margin: 0 auto; /* Center the image */}"
     ]
   }
 }
