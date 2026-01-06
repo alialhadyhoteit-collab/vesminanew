@@ -46,7 +46,7 @@
     "show_product_rating": false,
     "show_sold_out_badge": true,
     "show_discount": true,
-    "discount_mode": "percentage",
+    "discount_mode": "saving",
     "product_color_display": "hide",
     "product_image_aspect_ratio": "square",
     "product_info_alignment": "start",
