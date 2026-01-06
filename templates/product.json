@@ -134,7 +134,9 @@
         "collapsible_text_KKeYCL",
         "collapsible_text_RjctHk"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".product-single__photos img {max-height: 500px; /* Set the max height to whatever fits */ width: auto; /* Keep width auto to maintain aspect ratio */ display: block; margin: 0 auto; /* Center the image */}"
+      ],
       "settings": {
         "full_width": false,
         "show_fixed_add_to_cart": true,
