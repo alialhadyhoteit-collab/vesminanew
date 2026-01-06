@@ -135,7 +135,7 @@
         "collapsible_text_RjctHk"
       ],
       "custom_css": [
-        ".product-single__photos img {max-height: 200px !important; /* نجبر المتصفح على احترام هذا الطول */ width: auto; display: block; margin: 0 auto;}"
+        ".product-single__photos img {max-height: 300px !important; /* Force the image to stay at this max height */ width: auto; display: block; margin: 0 auto;}"
       ],
       "settings": {
         "full_width": false,
