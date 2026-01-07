@@ -10237,11 +10237,7 @@ split-lines {
   margin-inline-start: 0 !important;
 }
 
-/* ===============================
-   VESMINA – FORCE PRODUCT CARD IMAGE HEIGHT (IMPACT)
-   =============================== */
-
-/* Product card image wrapper */
+/* VESMINA — FORCE PRODUCT CARD IMAGE HEIGHT (Impact) */
 .card--product .media,
 .product-card .media,
 .card__media,
@@ -10250,28 +10246,21 @@ split-lines {
   overflow: hidden !important;
 }
 
-/* Disable Impact ratio system */
+/* Impact ratio system uses a pseudo-element */
 .card--product .media::before,
 .product-card .media::before,
 .card__media::before {
   content: none !important;
 }
 
-/* Force image to fill wrapper */
+/* Images/pictures inside cards */
 .card--product img,
 .product-card img,
-.card__media img {
+.card__media img,
+.card--product picture,
+.product-card picture,
+.card__media picture {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  position: absolute !important;
-  top: 0;
-  left: 0;
-}
-@media (max-width: 100px) {
-  .card--product .media,
-  .product-card .media,
-  .card__media {
-    height: 100px !important;
-  }
 }
