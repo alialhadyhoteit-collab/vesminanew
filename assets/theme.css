@@ -10242,3 +10242,9 @@ split-lines {
 .size-label-row a{
   margin-left: 0 !important;
 } 
+@media (max-width: 768px) {
+  .product-card__image,
+  .product-card__media img {
+    height: 300px !important;
+  }
+}
