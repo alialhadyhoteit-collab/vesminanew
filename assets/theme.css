@@ -10236,32 +10236,9 @@ split-lines {
 .size-label-row > *{
   margin-inline-start: 0 !important;
 }
-/* VESMINA — FIX PRODUCT CARD IMAGE HEIGHT (Impact) */
-@media (min-width: 769px) {
-  .product-card .media,
-  .product-card__media,
-  .product-card__image-wrapper,
-  .card__media,
-  .card__media .media {
-    height: 200px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .product-card .media,
-  .product-card__media,
-  .product-card__image-wrapper,
-  .card__media,
-  .card__media .media {
-    height: 200px !important;
-  }
-}
-
-.product-card img,
-.product-card__media img,
-.card__media img,
-.card__media .media img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
+/* VESMINA — Product card image ratio (Impact) */
+.product-card .media,
+.card--product .media,
+.product-grid .media {
+  --ratio-percent: 130% !important; /* 100% = square | 133% ≈ 3:4 portrait | 150% = taller */
 }
