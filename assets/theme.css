@@ -10237,30 +10237,25 @@ split-lines {
   margin-inline-start: 0 !important;
 }
 
-/* VESMINA — FORCE PRODUCT CARD IMAGE HEIGHT (Impact) */
-.card--product .media,
-.product-card .media,
-.card__media,
-.card__media .media {
-  height: 420px !important;
-  overflow: hidden !important;
+/* =========================
+   IMPACT – Product card image height via ratio
+   (taller = bigger number)
+   ========================= */
+
+/* Collection grids + featured collection grids */
+.product-grid .media,
+.collection .media,
+.featured-collection .media,
+#shopify-section-featured-collection .media,
+#shopify-section-main-collection-product-grid .media {
+  --ratio-percent: 140% !important;  /* 100% square | 133% 3:4 | 150% taller */
 }
 
-/* Impact ratio system uses a pseudo-element */
-.card--product .media::before,
-.product-card .media::before,
-.card__media::before {
-  content: none !important;
-}
-
-/* Images/pictures inside cards */
-.card--product img,
-.product-card img,
-.card__media img,
-.card--product picture,
-.product-card picture,
-.card__media picture {
-  width: 100% !important;
-  height: 100% !important;
+/* Make sure the image fills the ratio box */
+.product-grid .media img,
+.collection .media img,
+.featured-collection .media img,
+#shopify-section-featured-collection .media img,
+#shopify-section-main-collection-product-grid .media img {
   object-fit: cover !important;
 }
