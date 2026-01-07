@@ -10245,6 +10245,6 @@ split-lines {
 @media (max-width: 768px) {
   .product-card__image,
   .product-card__media img {
-    height: 300px !important;
+    height:200px !important;
   }
 }
