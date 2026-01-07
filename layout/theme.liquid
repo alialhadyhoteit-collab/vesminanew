@@ -125,58 +125,6 @@
   })();
 </script>
 {% endif %}
-<style>
-/* VESMINA — FORCE PRODUCT CARD IMAGE HEIGHT (Impact) */
-
-@media (min-width: 769px){
-  .card--product .media,
-  .product-card .media,
-  .card__media,
-  .product-card__media {
-    height: 200px !important;
-    overflow: hidden !important;
-    position: relative !important;
-  }
-}
-
-@media (max-width: 768px){
-  .card--product .media,
-  .product-card .media,
-  .card__media,
-  .product-card__media {
-    height: 100px !important;
-    overflow: hidden !important;
-    position: relative !important;
-  }
-}
-
-/* remove Impact ratio padding/overlay */
-.card--product .media::before,
-.product-card .media::before,
-.card__media::before,
-.product-card__media::before{
-  content: none !important;
-  display: none !important;
-  padding: 0 !important;
-}
-
-/* make image/picture fill */
-.card--product .media img,
-.product-card .media img,
-.card__media img,
-.product-card__media img,
-.card--product .media picture,
-.product-card .media picture,
-.card__media picture,
-.product-card__media picture{
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-}
-</style>
-
   </head>
 
   <body class="{% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">
