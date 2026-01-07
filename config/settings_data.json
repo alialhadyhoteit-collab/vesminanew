@@ -48,7 +48,7 @@
     "show_discount": true,
     "discount_mode": "saving",
     "product_color_display": "hide",
-    "product_image_aspect_ratio": "tall_crop",
+    "product_image_aspect_ratio": "natural",
     "product_info_alignment": "start",
     "cart_type": "drawer",
     "cart_icon": "shopping_cart",
