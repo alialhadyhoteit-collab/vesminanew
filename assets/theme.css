@@ -10242,3 +10242,17 @@ split-lines {
 .product-grid .media {
   --ratio-percent: 130% !important; /* 100% = square | 133% ≈ 3:4 portrait | 150% = taller */
 }
+/* VESMINA — Force fixed height product images */
+.product-card .media,
+.card--product .media,
+.product-grid .media {
+  height: 420px !important;
+}
+
+.product-card .media > img,
+.card--product .media > img,
+.product-grid .media > img {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
