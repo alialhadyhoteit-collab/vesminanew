@@ -10258,7 +10258,7 @@ split-lines {
   .featured-collection .media,
   #shopify-section-featured-collection .media,
   #shopify-section-main-collection-product-grid .media {
-    --ratio-percent: 120% !important; /* shorter for phone */
+    --ratio-percent: 50% !important; /* shorter for phone */
   }
 }
 
