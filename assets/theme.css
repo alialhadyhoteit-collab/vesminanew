@@ -10272,6 +10272,6 @@ split-lines {
   .card--product .media,
   .product-card .media,
   .card__media {
-    height: 300px !important;
+    height: 100px !important;
   }
 }
