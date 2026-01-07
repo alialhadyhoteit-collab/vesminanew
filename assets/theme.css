@@ -10236,15 +10236,32 @@ split-lines {
 .size-label-row > *{
   margin-inline-start: 0 !important;
 }
-
-/* If the theme sets auto margin on the size chart button/link, kill it */
-.size-label-row button,
-.size-label-row a{
-  margin-left: 0 !important;
-} 
-@media (max-width: 768px) {
-  .product-card__image,
-  .product-card__media img {
-    height:200px !important;
+/* VESMINA — FIX PRODUCT CARD IMAGE HEIGHT (Impact) */
+@media (min-width: 769px) {
+  .product-card .media,
+  .product-card__media,
+  .product-card__image-wrapper,
+  .card__media,
+  .card__media .media {
+    height: 420px !important;
   }
+}
+
+@media (max-width: 768px) {
+  .product-card .media,
+  .product-card__media,
+  .product-card__image-wrapper,
+  .card__media,
+  .card__media .media {
+    height: 300px !important;
+  }
+}
+
+.product-card img,
+.product-card__media img,
+.card__media img,
+.card__media .media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
