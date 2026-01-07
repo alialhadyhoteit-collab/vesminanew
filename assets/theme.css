@@ -10268,7 +10268,7 @@ split-lines {
   top: 0;
   left: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 100px) {
   .card--product .media,
   .product-card .media,
   .card__media {
