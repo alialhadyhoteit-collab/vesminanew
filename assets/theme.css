@@ -10243,7 +10243,7 @@ split-lines {
   .product-card__image-wrapper,
   .card__media,
   .card__media .media {
-    height: 420px !important;
+    height: 200px !important;
   }
 }
 
@@ -10253,7 +10253,7 @@ split-lines {
   .product-card__image-wrapper,
   .card__media,
   .card__media .media {
-    height: 300px !important;
+    height: 200px !important;
   }
 }
 
