@@ -89,12 +89,12 @@
       },
       "12016176150940211849": {
         "type": "shopify://apps/ot-theme-sections/blocks/otsb-script/45c0d634-d78b-458c-8bca-17086e7d65aa",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       },
       "11119278427475967885": {
         "type": "shopify://apps/ot-theme-sections/blocks/otsb-style/45c0d634-d78b-458c-8bca-17086e7d65aa",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     }
